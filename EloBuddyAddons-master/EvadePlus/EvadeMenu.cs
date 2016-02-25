@@ -23,7 +23,7 @@ namespace EvadePlus
                 return;
             }
 
-            MainMenu = EloBuddy.SDK.Menu.MainMenu.AddMenu("Evade+", "EvadePlus");
+            MainMenu = EloBuddy.SDK.Menu.MainMenu.AddMenu("NÉ Đòn", "NÉ Đòn Skill");
 
             // Set up main menu
             MainMenu.AddGroupLabel("General Settings");
