@@ -21,7 +21,7 @@ namespace BaseUltPlusPlus
         {
             //Menu
             BaseUltMenu = MainMenu.AddMenu("BaseUlt++", "BUP");
-            BaseUltMenu.AddGroupLabel("BaseUlt++ General");
+            BaseUltMenu.AddGroupLabel("BaseUlt++ Cài Đặt Chung");
             BaseUltMenu.AddSeparator();
             BaseUltMenu.Add("baseult", new CheckBox("BaseUlt"));
             BaseUltMenu.Add("showrecalls", new CheckBox("Show Recalls"));
