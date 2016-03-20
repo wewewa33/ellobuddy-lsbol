@@ -1,0 +1,11 @@
+# Executables
+*.exe
+
+# Folders
+bin/
+obj/
+.vs/
+
+# Solution User Options
+4 *.v12.suo
+5 *.v11.suo
