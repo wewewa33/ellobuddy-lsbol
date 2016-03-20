@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using EloBuddy;
 using EloBuddy.SDK;
-using LSJhin.Managers;
+using Jhin.Managers;
 using SharpDX;
 using Color = System.Drawing.Color;
 
-namespace LSJhin.Utilities
+namespace Jhin.Utilities
 {
     public class DamageSource
     {

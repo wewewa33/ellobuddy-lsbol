@@ -1,7 +1,7 @@
 ﻿using System.Linq;
 using EloBuddy;
 
-namespace LSJhin.Utilities
+namespace Jhin.Utilities
 {
     public enum CalculationType
     {

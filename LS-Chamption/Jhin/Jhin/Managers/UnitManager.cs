@@ -2,10 +2,10 @@
 using System.Linq;
 using EloBuddy;
 using EloBuddy.SDK;
-using LSJhin;
-using LSJhin.Utilities;
+using Jhin;
+using Jhin.Utilities;
 
-namespace LSJhin.Managers
+namespace Jhin.Managers
 {
     public static class UnitManager
     {

@@ -5,12 +5,12 @@ using EloBuddy;
 using EloBuddy.SDK;
 using EloBuddy.SDK.Menu.Values;
 using EloBuddy.SDK.Rendering;
-using LSJhin;
-using LSJhin.Utilities;
+using Jhin;
+using Jhin.Utilities;
 using SharpDX;
 using Color = System.Drawing.Color;
 
-namespace LSJhin.Managers
+namespace Jhin.Managers
 {
     public static class ToggleManager
     {

@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using EloBuddy.SDK.Menu;
 using EloBuddy.SDK.Menu.Values;
-using LSJhin.Utilities;
+using Jhin.Utilities;
 using SharpDX;
 
-namespace LSJhin.Managers
+namespace Jhin.Managers
 {
     public class MyValueBase
     {
@@ -37,7 +37,7 @@ namespace LSJhin.Managers
 
         public static void Initialize()
         {
-            Menu = MainMenu.AddMenu("LSJhin", "LSJhin Build: 6.4.0, Champion: " + AIO.MyHero.ChampionName);
+            Menu = MainMenu.AddMenu("Jhin", "Jhin Build: 6.4.0, Champion: " + AIO.MyHero.ChampionName);
             var displayNames = Enum.GetValues(typeof (Language)).Cast<Language>().ToArray();
             var slider = Menu.Add("Language",
                 new Slider("Language: English", (int) LanguageTranslator.CurrentCulture, 0, displayNames.Length - 1));

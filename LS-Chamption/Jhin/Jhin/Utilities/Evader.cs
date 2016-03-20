@@ -5,13 +5,13 @@ using EloBuddy;
 using EloBuddy.SDK;
 using EloBuddy.SDK.Menu;
 using EloBuddy.SDK.Menu.Values;
-using LSJhin;
-using LSJhin.Champions;
-using LSJhin.Managers;
-using LSJhin.Model;
+using Jhin;
+using Jhin.Champions;
+using Jhin.Managers;
+using Jhin.Model;
 using SharpDX;
 
-namespace LSJhin.Utilities
+namespace Jhin.Utilities
 {
     public class EvaderArgs : EventArgs
     {

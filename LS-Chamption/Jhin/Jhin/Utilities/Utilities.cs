@@ -1,11 +1,11 @@
 ﻿using System.Collections.Generic;
 using EloBuddy;
 using EloBuddy.SDK;
-using LSJhin;
-using LSJhin.Model;
+using Jhin;
+using Jhin.Model;
 using SharpDX;
 
-namespace LSJhin.Utilities
+namespace Jhin.Utilities
 {
     public class BestPositionResult
     {

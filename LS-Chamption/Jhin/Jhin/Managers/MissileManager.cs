@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using EloBuddy;
 using EloBuddy.SDK;
-using LSJhin;
+using Jhin;
 
-namespace LSJhin.Managers
+namespace Jhin.Managers
 {
     public static class MissileManager
     {

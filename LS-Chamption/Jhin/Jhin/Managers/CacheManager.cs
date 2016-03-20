@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using EloBuddy;
 using EloBuddy.SDK;
-using LSJhin.Utilities;
+using Jhin.Utilities;
 
-namespace LSJhin.Managers
+namespace Jhin.Managers
 {
     public static class CacheManager
     {

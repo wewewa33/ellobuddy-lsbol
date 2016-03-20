@@ -2,9 +2,9 @@
 using System.Globalization;
 using System.Linq;
 using EloBuddy.SDK.Menu.Values;
-using LSJhin.Managers;
+using Jhin.Managers;
 
-namespace LSJhin.Utilities
+namespace Jhin.Utilities
 {
     public enum Language
     {

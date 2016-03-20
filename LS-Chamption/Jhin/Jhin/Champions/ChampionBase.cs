@@ -3,13 +3,13 @@ using System.Linq;
 using EloBuddy;
 using EloBuddy.SDK;
 using EloBuddy.SDK.Menu;
-using LSJhin;
-using LSJhin.Managers;
-using LSJhin.Model;
-using LSJhin.Utilities;
+using Jhin;
+using Jhin.Managers;
+using Jhin.Model;
+using Jhin.Utilities;
 using SharpDX;
 
-namespace LSJhin.Champions
+namespace Jhin.Champions
 {
     public class ChampionBase
     {

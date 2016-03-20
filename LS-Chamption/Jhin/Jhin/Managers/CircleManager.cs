@@ -5,7 +5,7 @@ using EloBuddy;
 using EloBuddy.SDK.Menu.Values;
 using SharpDX;
 
-namespace LSJhin.Managers
+namespace Jhin.Managers
 {
     public class Circle
     {
