@@ -59,7 +59,7 @@
   <ItemGroup>
     <Compile Include="AIO.cs" />
     <Compile Include="Champions\ChampionBase.cs" />
-    <Compile Include="Champions\LS+Jhin.cs" />
+    <Compile Include="Champions\Jhin.cs" />
     <Compile Include="Managers\CacheManager.cs" />
     <Compile Include="Managers\CircleManager.cs" />
     <Compile Include="Managers\DrawingsManager.cs" />
