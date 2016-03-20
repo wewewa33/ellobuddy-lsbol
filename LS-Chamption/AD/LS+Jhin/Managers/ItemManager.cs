@@ -2,9 +2,9 @@
 using System.Linq;
 using EloBuddy;
 using EloBuddy.SDK;
-using LS+Jhin;
+using LSJhin;
 
-namespace LS+Jhin.Managers
+namespace LSJhin.Managers
 {
     public static class ItemManager
     {

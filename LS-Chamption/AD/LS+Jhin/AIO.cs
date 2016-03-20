@@ -4,11 +4,11 @@ using System.Linq;
 using System.Reflection;
 using EloBuddy;
 using EloBuddy.SDK.Events;
-using LS+Jhin.Champions;
-using LS+Jhin.Managers;
-using LS+Jhin.Utilities;
+using LSJhin.Champions;
+using LSJhin.Managers;
+using LSJhin.Utilities;
 
-namespace LS+Jhin
+namespace LSJhin
 {
     // ReSharper disable once InconsistentNaming
     public static class AIO
@@ -17,7 +17,7 @@ namespace LS+Jhin
 
         public static HashSet<Champion> SupportedChampions = new HashSet<Champion>
         {
-            Champion.LS+Jhin,
+            Champion.LSJhin,
         };
 
         public static bool Initialized;
@@ -43,12 +43,12 @@ namespace LS+Jhin
 
         public static void WriteInConsole(string message)
         {
-            Console.WriteLine("LS+Jhin: " + message);
+            Console.WriteLine("LSJhin: " + message);
         }
 
         public static void WriteInChat(string message)
         {
-            Chat.Print("LS+Jhin: " + message);
+            Chat.Print("LSJhin: " + message);
         }
 
         private static void Main()

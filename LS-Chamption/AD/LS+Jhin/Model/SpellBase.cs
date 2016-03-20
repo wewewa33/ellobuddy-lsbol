@@ -4,12 +4,12 @@ using System.Linq;
 using EloBuddy;
 using EloBuddy.SDK;
 using EloBuddy.SDK.Menu.Values;
-using LS+Jhin;
-using LS+Jhin.Managers;
-using LS+Jhin.Utilities;
+using LSJhin;
+using LSJhin.Managers;
+using LSJhin.Utilities;
 using SharpDX;
 
-namespace LS+Jhin.Model
+namespace LSJhin.Model
 {
     public enum SpellType
     {

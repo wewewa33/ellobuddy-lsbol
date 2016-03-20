@@ -7,15 +7,15 @@ using EloBuddy.SDK;
 using EloBuddy.SDK.Events;
 using EloBuddy.SDK.Menu.Values;
 using EloBuddy.SDK.Rendering;
-using LS+Jhin.Managers;
-using LS+Jhin.Model;
-using LS+Jhin.Utilities;
+using LSJhin.Managers;
+using LSJhin.Model;
+using LSJhin.Utilities;
 using SharpDX;
 using Color = System.Drawing.Color;
 
-namespace LS+Jhin.Champions
+namespace LSJhin.Champions
 {
-    public class LS+Jhin : ChampionBase
+    public class LSJhin : ChampionBase
     {
         public bool IsCastingR;
         public bool IsCharging;
@@ -32,10 +32,10 @@ namespace LS+Jhin.Champions
 
         public bool IsR1
         {
-            get { return R.Instance.SData.Name == "LS+JhinR"; }
+            get { return R.Instance.SData.Name == "LSJhinR"; }
         }
 
-        public LS+Jhin()
+        public LSJhin()
         {
             foreach (var enemy in EntityManager.Heroes.Enemies)
             {
@@ -97,13 +97,13 @@ namespace LS+Jhin.Champions
                             W.LastEndPosition = args.End;
                             break;
                         case SpellSlot.R:
-                            if (args.SData.Name == "LS+JhinR")
+                            if (args.SData.Name == "LSJhinR")
                             {
                                 IsCastingR = true;
                                 LastRCone = new Geometry.Polygon.Sector(sender.Position, args.End, (float)(60f * Math.PI / 180f), R.Range);
                                 Stacks = 4;
                             }
-                            else if (args.SData.Name == "LS+JhinRShot")
+                            else if (args.SData.Name == "LSJhinRShot")
                             {
                                 R.LastCastTime = Core.GameTickCount;
                                 TapKeyPressed = false;
@@ -297,9 +297,9 @@ namespace LS+Jhin.Champions
         {
             if (IsCastingR)
             {
-                IsCastingR = R.Instance.Name == "LS+JhinRShot"; //MyHero.Spellbook.IsChanneling;
+                IsCastingR = R.Instance.Name == "LSJhinRShot"; //MyHero.Spellbook.IsChanneling;
             }
-            IsCharging = MyHero.HasBuff("LS+JhinPassiveReload");
+            IsCharging = MyHero.HasBuff("LSJhinPassiveReload");
             Orbwalker.DisableAttacking = IsCastingR;
             Orbwalker.DisableMovement = IsCastingR;
             if (R.IsReady && !IsCastingR)
@@ -585,7 +585,7 @@ namespace LS+Jhin.Champions
 
         public bool TargetHaveEBuff(AIHeroClient target)
         {
-            return target.TargetHaveBuff("LS+Jhinespotteddebuff");
+            return target.TargetHaveBuff("LSJhinespotteddebuff");
         }
 
         public override float GetSpellDamage(SpellSlot slot, Obj_AI_Base target)

@@ -4,7 +4,7 @@ using EloBuddy;
 using EloBuddy.SDK;
 using SharpDX;
 
-namespace LS+Jhin.Managers
+namespace LSJhin.Managers
 {
     public static class YasuoWallManager
     {

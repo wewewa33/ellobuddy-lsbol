@@ -1,7 +1,7 @@
 ﻿using System.Linq;
 using EloBuddy.SDK;
 
-namespace LS+Jhin.Managers
+namespace LSJhin.Managers
 {
     public static class ModeManager
     {

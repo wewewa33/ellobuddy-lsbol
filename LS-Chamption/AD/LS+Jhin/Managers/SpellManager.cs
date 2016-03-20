@@ -1,10 +1,10 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using EloBuddy;
-using LS+Jhin;
-using LS+Jhin.Model;
+using LSJhin;
+using LSJhin.Model;
 
-namespace LS+Jhin.Managers
+namespace LSJhin.Managers
 {
     public static class SpellManager
     {

@@ -1,9 +1,9 @@
 ﻿using EloBuddy;
 using EloBuddy.SDK.Menu;
-using LS+Jhin;
-using LS+Jhin.Utilities;
+using LSJhin;
+using LSJhin.Utilities;
 
-namespace LS+Jhin.Managers
+namespace LSJhin.Managers
 {
     public static class DrawingsManager
     {
