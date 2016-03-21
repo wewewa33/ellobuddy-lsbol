@@ -87,15 +87,6 @@ namespace Skin
                 Text1.TextValue = NomeChamp.ToString();
                 Text1.Draw();
 
-                Text1.Position = Drawing.WorldToScreen(Player.Instance.Position) - new Vector2(100, -40);
-                Text1.Color = Color.White;
-                Text1.TextValue = "✔ ModelHack: ";
-                Text1.Draw();
-                Text1.Position = Drawing.WorldToScreen(Player.Instance.Position) - new Vector2(10, -40);
-                Text1.Color = Color.LimeGreen;
-                Text1.TextValue = Program.Menu["ModelID"].DisplayName;
-                Text1.Draw();
-
                 Text1.Position = Drawing.WorldToScreen(Player.Instance.Position) - new Vector2(100, -60);
                 Text1.Color = Color.White;
                 Text1.TextValue = "✔ SkinHack: ";
