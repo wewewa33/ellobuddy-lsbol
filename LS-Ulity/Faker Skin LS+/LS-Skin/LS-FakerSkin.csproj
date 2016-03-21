@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0FE0BDCA-2FA5-4B8B-972C-2CD6727B342C}</ProjectGuid>
+    <ProjectGuid>{0LASJDIASD-2FA5-4B8B-972C-2CD6727B342C}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>LSFakerSkin</RootNamespace>
