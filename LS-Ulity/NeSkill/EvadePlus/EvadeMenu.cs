@@ -4,7 +4,7 @@ using EloBuddy.SDK;
 using EloBuddy.SDK.Menu;
 using EloBuddy.SDK.Menu.Values;
 
-namespace EvadePlus
+namespace LsEvade
 {
     internal class EvadeMenu
     {
@@ -23,7 +23,7 @@ namespace EvadePlus
                 return;
             }
 
-            MainMenu = EloBuddy.SDK.Menu.MainMenu.AddMenu("Evade+", "EvadePlus");
+            MainMenu = EloBuddy.SDK.Menu.MainMenu.AddMenu("LsEvade", "LsEvade");
 
             // Set up main menu
             MainMenu.AddGroupLabel("General Settings");

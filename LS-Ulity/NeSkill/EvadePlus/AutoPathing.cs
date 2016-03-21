@@ -9,7 +9,7 @@ using EloBuddy.SDK.Menu.Values;
 using SharpDX;
 using Color = System.Drawing.Color;
 
-namespace EvadePlus
+namespace LsEvade
 {
     public static class AutoPathing
     {

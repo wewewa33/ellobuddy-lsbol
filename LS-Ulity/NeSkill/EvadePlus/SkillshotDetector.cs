@@ -5,7 +5,7 @@ using EloBuddy;
 using EloBuddy.SDK;
 using EloBuddy.SDK.Menu.Values;
 
-namespace EvadePlus
+namespace LsEvade
 {
     public class SkillshotDetector
     {

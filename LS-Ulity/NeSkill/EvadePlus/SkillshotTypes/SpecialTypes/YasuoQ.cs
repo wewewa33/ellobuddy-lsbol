@@ -1,7 +1,7 @@
 ﻿using System.Drawing;
 using EloBuddy;
 
-namespace EvadePlus.SkillshotTypes.SpecialTypes
+namespace LsEvade.SkillshotTypes.SpecialTypes
 {
     public class YasuoQ : LinearMissileSkillshot
     {

@@ -10,9 +10,9 @@ using EloBuddy.SDK.Rendering;
 using SharpDX;
 using Color = System.Drawing.Color;
 
-namespace EvadePlus
+namespace LsEvade
 {
-    public class EvadePlus
+    public class LsEvade
     {
         #region Properties
 
@@ -96,13 +96,13 @@ namespace EvadePlus
 
         #endregion
 
-        public EvadePlus(SkillshotDetector detector)
+        public LsEvade(SkillshotDetector detector)
         {
             Skillshots = new EvadeSkillshot[] {};
             Polygons = new Geometry.Polygon[] {};
             ClippedPolygons = new List<Geometry.Polygon>();
             PathFinding = new PathFinding(this);
-            StatusText = new Text("EvadePlus Enabled", new Font("Euphemia", 10F, FontStyle.Bold)); //Calisto MT
+            StatusText = new Text("LsEvade Enabled", new Font("Euphemia", 10F, FontStyle.Bold)); //Calisto MT
             _skillshotPolygonCache = new Dictionary<EvadeSkillshot, Geometry.Polygon>();
 
             SkillshotDetector = detector;
@@ -675,7 +675,7 @@ namespace EvadePlus
 
         public class EvadeResult
         {
-            private EvadePlus Evade;
+            private LsEvade Evade;
             private int ExtraRange { get; set; }
 
             public int Time { get; set; }
@@ -707,7 +707,7 @@ namespace EvadePlus
                 }
             }
 
-            public EvadeResult(EvadePlus evade, Vector2 evadePoint, Vector2 anchorPoint, int totalTimeAvailable,
+            public EvadeResult(LsEvade evade, Vector2 evadePoint, Vector2 anchorPoint, int totalTimeAvailable,
                 int timeAvailable,
                 bool enoughTime)
             {

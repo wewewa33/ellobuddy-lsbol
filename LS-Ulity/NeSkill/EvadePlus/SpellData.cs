@@ -1,6 +1,6 @@
 ﻿using EloBuddy;
 
-namespace EvadePlus
+namespace LsEvade
 {
     public class SpellData
     {

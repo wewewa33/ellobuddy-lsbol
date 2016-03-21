@@ -6,7 +6,7 @@ using EloBuddy.SDK.Rendering;
 using SharpDX;
 using Color = System.Drawing.Color;
 
-namespace EvadePlus.SkillshotTypes
+namespace LsEvade.SkillshotTypes
 {
     public class CircularMissileSkillshot : EvadeSkillshot
     {
