@@ -86,7 +86,7 @@ namespace Skin
             Menu.AddGroupLabel("By: LS+ H4ckercfqq2 Edit");
 
             Chat.Print("<font color='#FF00FF'>LS+ Status: <font color='#00d459'>Model Skin Load</font>", System.Drawing.Color.White);
-            Chat.Print("<font color='#FF00FF'>LS+ Status:<font color='#00d459'>Ban dag MOD Skin Tuong: " + NomeChamp + "</font>", System.Drawing.Color.White);
+            Chat.Print("<font color='#FF00FF'>LS+ Status:<font color='#00d459'>Ban dag MOD Skin Tuong:<font color='#FFFF00'>" + NomeChamp + "</font>", System.Drawing.Color.White);
             Game.OnTick += Game_Atualizar;
             Drawing.OnDraw += Game_OnDraw;
         }
