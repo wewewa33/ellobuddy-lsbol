@@ -23,28 +23,28 @@ namespace EvadePlus
                 return;
             }
 
-            MainMenu = EloBuddy.SDK.Menu.MainMenu.AddMenu("Evade+", "EvadePlus");
+            MainMenu = EloBuddy.SDK.Menu.MainMenu.AddMenu("LS+ Né Skill", "Né chiêu né tuyệt chiêu");
 
             // Set up main menu
-            MainMenu.AddGroupLabel("General Settings");
-            MainMenu.Add("fowDetection", new CheckBox("Enable FOW detection"));
+            MainMenu.AddGroupLabel("Cài Đặt Chung");
+            MainMenu.Add("fowDetection", new CheckBox("Phát hiện sử dụng skill ám sát"));
             MainMenu.AddLabel("On: for dodging through fog of war, Off: for more human behaviour");
             MainMenu.AddSeparator(3);
 
-            MainMenu.Add("processSpellDetection", new CheckBox("Enable Process Spell Detection"));
-            MainMenu.AddLabel("skillshot detection before the missile is created, recommended: On");
+            MainMenu.Add("processSpellDetection", new CheckBox("Kích hoạt tính năng quá trình Phát hiện lỗi"));
+            MainMenu.AddLabel("phát hiện skillshot trước khi tên lửa được tạo ra tướng AD, khuyến cáo: On");
             MainMenu.AddSeparator(3);
 
-            MainMenu.Add("limitDetectionRange", new CheckBox("Limit Spell Detection Range"));
-            MainMenu.AddLabel("detect only skillshots near you, recommended: On");
+            MainMenu.Add("limitDetectionRange", new CheckBox("Phát hiện sử dụng skill ám sát"));
+            MainMenu.AddLabel("phát hiện chỉ có skillshots gần bạn, đề nghị: On");
             MainMenu.AddSeparator(3);
 
-            MainMenu.Add("recalculatePosition", new CheckBox("Allow recalculation of evade position", false));
-            MainMenu.AddLabel("allow change of evading path, recommended: Off");
+            MainMenu.Add("recalculatePosition", new CheckBox("Cho phép tính toán lại vị trí né tránh", false));
+            MainMenu.AddLabel("cho phép thay đổi trốn tránh, đề nghị: Tắt");
             MainMenu.AddSeparator(3);
 
-            MainMenu.Add("moveToInitialPosition", new CheckBox("Move to desired position after evade.", false));
-            MainMenu.AddLabel("move to your desired location after evading");
+            MainMenu.Add("moveToInitialPosition", new CheckBox("Di chuyển đến vị trí mong muốn sau khi né tránh.", false));
+            MainMenu.AddLabel("di chuyển đến vị trí mong muốn của bạn sau khi trốn");
             MainMenu.AddSeparator(3);
 
             MainMenu.Add("serverTimeBuffer", new Slider("Server Time Buffer", 0, 0, 200));
@@ -52,11 +52,11 @@ namespace EvadePlus
             MainMenu.AddSeparator();
 
             MainMenu.AddGroupLabel("Humanizer");
-            MainMenu.Add("skillshotActivationDelay", new Slider("Evade delay", 0, 0, 400));
+            MainMenu.Add("skillshotActivationDelay", new Slider("Né skill chậm trễ", 0, 0, 400));
             MainMenu.AddSeparator(10);
 
-            MainMenu.Add("extraEvadeRange", new Slider("Extra Evade Range", 0, 0, 300));
-            MainMenu.Add("randomizeExtraEvadeRange", new CheckBox("Randomize Extra Evade Range", false));
+            MainMenu.Add("extraEvadeRange", new Slider("thêm Né Skill dài", 0, 0, 300));
+            MainMenu.Add("randomizeExtraEvadeRange", new CheckBox("Ngẫu nhiên thêm né skill trong  Phạm vi", false));
 
             // Set up skillshot menu
             var heroes = Program.DeveloperMode ? EntityManager.Heroes.AllHeroes : EntityManager.Heroes.Enemies;
@@ -69,7 +69,7 @@ namespace EvadePlus
                         s.SpellData.ChampionName == "AllChampions" &&
                         heroes.Any(obj => obj.Spellbook.Spells.Select(c => c.Name).Contains(s.SpellData.SpellName))));
 
-            SkillshotMenu = MainMenu.AddSubMenu("Skillshots");
+            SkillshotMenu = MainMenu.AddSubMenu("Chiêu tướng (Skill)");
             SkillshotMenu.AddLabel(string.Format("Skillshots Loaded {0}", skillshots.Count));
             SkillshotMenu.AddSeparator();
 
@@ -104,25 +104,25 @@ namespace EvadePlus
             }
 
             // Set up spell menu
-            SpellMenu = MainMenu.AddSubMenu("Evading Spells");
+            SpellMenu = MainMenu.AddSubMenu("Né Tướng đánh Phép");
             SpellMenu.AddGroupLabel("Flash");
             SpellMenu.Add("flash", new Slider("Danger Value", 5, 0, 5));
 
             // Set up draw menu
-            DrawMenu = MainMenu.AddSubMenu("Drawings");
+            DrawMenu = MainMenu.AddSubMenu("vẽ đường đi của skill");
             DrawMenu.AddGroupLabel("Evade Drawings");
-            DrawMenu.Add("disableAllDrawings", new CheckBox("Disable All Drawings", false));
-            DrawMenu.Add("drawEvadePoint", new CheckBox("Draw Evade Point"));
-            DrawMenu.Add("drawEvadeStatus", new CheckBox("Draw Evade Status"));
-            DrawMenu.Add("drawDangerPolygon", new CheckBox("Draw Danger Polygon", false));
+            DrawMenu.Add("disableAllDrawings", new CheckBox("Vô hiệu hoá tất cả các vẽ đường đi của skill", false));
+            DrawMenu.Add("drawEvadePoint", new CheckBox("Vẽ điểm né skill"));
+            DrawMenu.Add("drawEvadeStatus", new CheckBox("vẽ trạng thái né skill"));
+            DrawMenu.Add("drawDangerPolygon", new CheckBox("Vẽ Nguy hiểm", false));
             DrawMenu.AddSeparator();
-            DrawMenu.Add("drawPath", new CheckBox("Draw Autpathing Path"));
+            DrawMenu.Add("drawPath", new CheckBox("Vẽ auto đường đi bị gank"));
 
             // Set up controls menu
-            HotkeysMenu = MainMenu.AddSubMenu("Hotkeys");
-            HotkeysMenu.AddGroupLabel("Hotkeys");
-            HotkeysMenu.Add("enableEvade", new KeyBind("Enable Evade", true, KeyBind.BindTypes.PressToggle, 'M'));
-            HotkeysMenu.Add("dodgeOnlyDangerous", new KeyBind("Dodge Only Dangerous", false, KeyBind.BindTypes.HoldActive));
+            HotkeysMenu = MainMenu.AddSubMenu("Phím tắt");
+            HotkeysMenu.AddGroupLabel("Phím nhanh");
+            HotkeysMenu.Add("enableEvade", new KeyBind("vô hiệu hóa Né Skill", true, KeyBind.BindTypes.PressToggle, 'M'));
+            HotkeysMenu.Add("dodgeOnlyDangerous", new KeyBind("Chỉ tránh skill nguy hiểm", false, KeyBind.BindTypes.HoldActive));
         }
 
         private static EvadeSkillshot GetSkillshot(string s)
