@@ -39,7 +39,7 @@ namespace Skin
             Menu = MainMenu.AddMenu("LS+ Skin MOD", "LS+ Faker Skin Elov");
             Menu.AddGroupLabel("Cài Đặt Chung");
             Menu.Add("Sử dụng Skin", new CheckBox("✔   (" + MeuCampeao + " - Sử dụng Skin 1 To 11)", true));
-            Menu.Add("Đặt lại Skin Mặc Định", new KeyBind("Thiết lập lại(Đặt lại)", false, KeyBind.BindTypes.HoldActive, 'L'));
+            Menu.Add("Đặt lại Skin Mặc Định", new KeyBind("Reset / Resetar (Bug Reset)", false, KeyBind.BindTypes.HoldActive, 'L'));
             var SkinHack = Menu.Add("SkinID", new Slider("SkinHack Select", 1, 0, 11));
             var ID = new[] {"Classic","SkinHack 1","SkinHack 2","SkinHack 3","SkinHack 4","SkinHack 5","SkinHack 6","SkinHack 7","SkinHack 8","SkinHack 9","SkinHack 10","SkinHack 11"};
             SkinHack.DisplayName = ID[SkinHack.CurrentValue];
