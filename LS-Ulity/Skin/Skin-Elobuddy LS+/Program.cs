@@ -75,7 +75,14 @@ namespace Skin
             "Zed","Ziggs","Zilean","Zyra"};
             ModelHack.DisplayName = ID1[ModelHack.CurrentValue];
             ModelHack.OnValueChange += delegate(ValueBase<int> sender, ValueBase<int>.ValueChangeArgs changeArgs) { sender.DisplayName = ID1[changeArgs.NewValue]; };
-                          
+          
+            
+            Menu.AddGroupLabel("─────────────────────────────────────────");
+            Menu.AddGroupLabel("  ◣  Extra  ◥");
+            Menu.Add("DrawTarget", new CheckBox("✔   GetLine ( TargetSelector )", true));
+            Menu.AddGroupLabel("─────────────────────────────────────────");
+            Menu.AddGroupLabel("By: EloBuddy");
+
             Chat.Print("|| LS+ Faker Skin MOD Skin LS+ || <font color='#00d459'>By: LS+ </font>", System.Drawing.Color.White);
             Chat.Print("|| LS+ Faker Skin MOD Skin LS+ || <font color='#00d459'>LOAD Skin : " + NomeChamp + "</font>", System.Drawing.Color.White);
             Game.OnTick += Game_Atualizar;
