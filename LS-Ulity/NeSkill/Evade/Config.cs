@@ -71,7 +71,7 @@ namespace Evade
 
         public static void CreateMenu()
         {
-            Menu = MainMenu.AddMenu("Evade", "evade");
+            Menu = MainMenu.AddMenu("Né Skill v2", "Né Skill LS+ v2");
 
             if (Menu == null)
             {
