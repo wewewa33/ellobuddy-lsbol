@@ -24,8 +24,8 @@ namespace Skin
     {
         public static Menu Menu;//Menu
         public static String NomeChamp = Player.Instance.ChampionName;//Detecta o Campeão carregado original
-        public static Text Text1 = new EloBuddy.SDK.Rendering.Text("", new System.Drawing.Font(System.Drawing.FontFamily.GenericSansSerif, 9, System.Drawing.FontStyle.Bold));
-        public static Text Text = new EloBuddy.SDK.Rendering.Text("", new System.Drawing.Font(System.Drawing.FontFamily.GenericSansSerif, 10, System.Drawing.FontStyle.Bold));
+        public static Text Text1 = new EloBuddy.SDK.Rendering.Text("", new System.Drawing.Font(System.Drawing.FontFamily.GenericSansSerif, 11, System.Drawing.FontStyle.Bold));
+        public static Text Text = new EloBuddy.SDK.Rendering.Text("", new System.Drawing.Font(System.Drawing.FontFamily.GenericSansSerif, 11, System.Drawing.FontStyle.Bold));
         //Load
         static void Main(string[] args)
         {
@@ -36,12 +36,11 @@ namespace Skin
         private static void Game_Iniciar(EventArgs args)
         {
             var MeuCampeao = ObjectManager.Player.ChampionName;
-            Menu = MainMenu.AddMenu("SkinHack 2016 BETA", "SkinModelHack");
-            Menu.AddGroupLabel("/////////////////////////////////////////");
-            Menu.AddGroupLabel("  ◣  SkinHack ◥");
-            Menu.Add("UseSkinHack", new CheckBox("✔   (" + MeuCampeao + " - Use SkinHack 1 To 11)", true));
-            Menu.Add("ResetSkin&Model", new KeyBind("Reset / Resetar (Bug Reset)", false, KeyBind.BindTypes.HoldActive, 'L'));
-            var SkinHack = Menu.Add("SkinID", new Slider("SkinHack Select", 1, 0, 11));
+            Menu = MainMenu.AddMenu("LS+ Skin MOD", "LS+ Faker Skin Elov");
+            Menu.AddGroupLabel("Cài Đặt Chung");
+            Menu.Add("Sử dụng Skin", new CheckBox("✔   (" + MeuCampeao + " - Sử dụng Skin 1 To 11)", true));
+            Menu.Add("Đặt  Skin ko sử dụng", new KeyBind("Thiết lập lại (Đặt lại)", false, KeyBind.BindTypes.HoldActive, 'L'));
+            var SkinHack = Menu.Add("SkinID", new Slider("Chọn Skin", 1, 0, 11));
             var ID = new[] {"Classic","SkinHack 1","SkinHack 2","SkinHack 3","SkinHack 4","SkinHack 5","SkinHack 6","SkinHack 7","SkinHack 8","SkinHack 9","SkinHack 10","SkinHack 11"};
             SkinHack.DisplayName = ID[SkinHack.CurrentValue];
             SkinHack.OnValueChange += delegate(ValueBase<int> sender, ValueBase<int>.ValueChangeArgs changeArgs){sender.DisplayName = ID[changeArgs.NewValue];};
@@ -83,10 +82,10 @@ namespace Skin
             Menu.Add("DrawTarget", new CheckBox("✔   GetLine ( TargetSelector )", true));
             Menu.Add("DrawTEXT", new CheckBox("✔   Show Text ( Config )", true));
             Menu.AddGroupLabel("─────────────────────────────────────────");
-            Menu.AddGroupLabel("By: UnrealSkill99");
+            Menu.AddGroupLabel("By: EloBuddy");
 
-            Chat.Print("|| SkinHack 2016 BETA || <font color='#00d459'>By: UnrealSkill99 </font>", System.Drawing.Color.White);
-            Chat.Print("|| SkinHack 2016 BETA || <font color='#00d459'>Model Original Load " + NomeChamp + "</font>", System.Drawing.Color.White);
+            Chat.Print("|| LS+ Faker Skin MOD Skin LS+ || <font color='#00d459'>By: LS+ </font>", System.Drawing.Color.White);
+            Chat.Print("|| LS+ Faker Skin MOD Skin LS+ || <font color='#00d459'>LOAD Skin : " + NomeChamp + "</font>", System.Drawing.Color.White);
             Game.OnTick += Game_Atualizar;
             Drawing.OnDraw += Game_OnDraw;
         }
@@ -106,27 +105,25 @@ namespace Skin
                 Drawing.DrawText(Drawing.Width - 290, 60, Color.Gray, "Original ID: ");
                 Drawing.DrawText(Drawing.Width - 215, 60, Color.White, NomeChamp.ToString());*/
                 
+				
+
                 Text1.Position = Drawing.WorldToScreen(Player.Instance.Position) - new Vector2(100, -20);
                 Text1.Color = Color.White ;
-                Text1.TextValue = "✔ Original: ";
+                Text1.TextValue = "✔ Skin: ";
                 Text1.Draw();
                 Text1.Position = Drawing.WorldToScreen(Player.Instance.Position) - new Vector2(10, -20);
                 Text1.Color = Color.LimeGreen;
                 Text1.TextValue = NomeChamp.ToString();
                 Text1.Draw();
 
-                Text1.Position = Drawing.WorldToScreen(Player.Instance.Position) - new Vector2(100, -40);
-                Text1.Color = Color.White;
-                Text1.TextValue = "✔ ModelHack: ";
-                Text1.Draw();
-                Text1.Position = Drawing.WorldToScreen(Player.Instance.Position) - new Vector2(10, -40);
+				Text1.Position = Drawing.WorldToScreen(Player.Instance.Position) - new Vector2(280, -40);
                 Text1.Color = Color.LimeGreen;
-                Text1.TextValue = Program.Menu["ModelID"].DisplayName;
+                Text1.TextValue = "✔✔✔ LS+ Faker - ViệtNamese -H4ckercfqq2 (Lêu Lêu mấy thằng Xài Tool mà gà :D)✔✔✔";
                 Text1.Draw();
-
+				
                 Text1.Position = Drawing.WorldToScreen(Player.Instance.Position) - new Vector2(100, -60);
                 Text1.Color = Color.White;
-                Text1.TextValue = "✔ SkinHack: ";
+                Text1.TextValue = "✔ ID Skin: ";
                 Text1.Draw();
                 Text1.Position = Drawing.WorldToScreen(Player.Instance.Position) - new Vector2(10, -60);
                 Text1.Color = Color.LimeGreen;
