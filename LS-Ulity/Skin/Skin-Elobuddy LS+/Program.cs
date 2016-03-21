@@ -60,15 +60,7 @@ namespace Skin
             Player.Instance.SetModel(NomeChamp);//Reset My Champion!
             Menu.AddGroupLabel("─────────────────────────────────────────");
             Menu.AddGroupLabel("  ◤  ModelHack  ◢");
-            Menu.AddGroupLabel("  ◤  ModelHack  ◢");
-			Menu.AddGroupLabel("  ◤  ModelHack  ◢");
-			Menu.AddGroupLabel("  ◤  ModelHack  ◢");
-			Menu.AddGroupLabel("  ◤  ModelHack  ◢");
-			Menu.AddGroupLabel("  ◤  ModelHack  ◢");
-			Menu.AddGroupLabel("  ◤  ModelHack  ◢");
-			Menu.AddGroupLabel("  ◤  ModelHack  ◢");
-			Menu.AddGroupLabel("  ◤  ModelHack  ◢");
-			Menu.AddGroupLabel("  ◤  ModelHack  ◢");
+
         }
 
         //Drawing
