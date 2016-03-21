@@ -36,7 +36,7 @@ namespace Skin
         private static void Game_Iniciar(EventArgs args)
         {
             var MeuCampeao = ObjectManager.Player.ChampionName;
-            Menu = MainMenu.AddMenu("LS+ Skin MOD", "LS+ Faker Skin Elobuddy");
+            Menu = MainMenu.AddMenu("LS+ Skin MOD", "LS+ Faker Skin Elov");
             Menu.AddGroupLabel("/////////////////////////////////////////");
             Menu.AddGroupLabel("  ◣  SkinHack ◥");
             Menu.Add("UseSkinHack", new CheckBox("✔   (" + MeuCampeao + " - Use SkinHack 1 To 11)", true));
@@ -60,7 +60,35 @@ namespace Skin
             Player.Instance.SetModel(NomeChamp);//Reset My Champion!
             Menu.AddGroupLabel("─────────────────────────────────────────");
             Menu.AddGroupLabel("  ◤  ModelHack  ◢");
+            Menu.Add("UseModelHack", new CheckBox("✔   (" + MeuCampeao + " - Use ModelHack 1 To 128)", false));
+            Menu.Add("ModelLoad", new KeyBind("Active / Ligar", false, KeyBind.BindTypes.HoldActive, 'N'));
+            var ModelHack =  Menu.Add("ModelID", new Slider("ModelHack Select", 1, 0, 128));
+            var ID1 = new[] {
+            "Aatrox","Ahri","Akali","Alistar","Amumu","Anivia","Annie","Ashe","Azir","Bard","Blitzcrank","Brand","Braum","Caitlyn",
+            "Cassiopeia","ChoGath","Corki","Darius","Diana","Draven","Ekko","Elise","Evelynn","Ezreal","Fiddlesticks","Fiora","Fizz",
+            "Galio","Gangplank","Garen","Gnar","Gragas","Graves"," Hecarim","Heimerdinger","Illaoi","Irelia","Janna"," Jarvan IV ","Jax",
+            "Jayce","Jhin","Jinx","Kalista","Karma","Karthus","Kassadin","Katarina","Kayle","Kennen","Khazix","Kindred","KogMaw","LeBlanc",
+            "LeeSin","Leona","Lissandra","Lucian","Lulu","Lux","Malphite","Malzahar","Maokai"," MasterYi","MissFortune","Mordekaiser","Morgana",
+            "Dr.Mundo","Nami","Nasus","Nautilus","Nidalee","Nocturne","Nunu","Olaf","Orianna","Pantheon","Poppy","Quin","Rammus","RekSai",
+            "Renekton","Rengar","Riven","Rumble","Ryze","Sejuani","Shaco","Shen","Shyvana","Singed","Sion","Sivir"," Skarner","Sona","Soraka",
+            "Swain","Syndra","TahmKench","Talon","Taric","Teemo","Thresh","Tristana","Trundle","Tryndamere","TwistedFate","Twitch","Udyr","Urgot",
+            "Varus","Vayne","Veigar","Velkoz","Vi","Viktor","Vladimir","Volibear","Warwick","Wukong","Xerath","XinZhao","Yasuo","Yorick","Zac",
+            "Zed","Ziggs","Zilean","Zyra"};
+            ModelHack.DisplayName = ID1[ModelHack.CurrentValue];
+            ModelHack.OnValueChange += delegate(ValueBase<int> sender, ValueBase<int>.ValueChangeArgs changeArgs) { sender.DisplayName = ID1[changeArgs.NewValue]; };
+          
+            
+            Menu.AddGroupLabel("─────────────────────────────────────────");
+            Menu.AddGroupLabel("  ◣  Extra  ◥");
+            Menu.Add("DrawTarget", new CheckBox("✔   GetLine ( TargetSelector )", true));
+            Menu.Add("DrawTEXT", new CheckBox("✔   Show Text ( Config )", true));
+            Menu.AddGroupLabel("─────────────────────────────────────────");
+            Menu.AddGroupLabel("By: UnrealSkill99");
 
+            Chat.Print("|| SkinHack 2016 BETA || <font color='#00d459'>By: UnrealSkill99 </font>", System.Drawing.Color.White);
+            Chat.Print("|| SkinHack 2016 BETA || <font color='#00d459'>Model Original Load " + NomeChamp + "</font>", System.Drawing.Color.White);
+            Game.OnTick += Game_Atualizar;
+            Drawing.OnDraw += Game_OnDraw;
         }
 
         //Drawing
