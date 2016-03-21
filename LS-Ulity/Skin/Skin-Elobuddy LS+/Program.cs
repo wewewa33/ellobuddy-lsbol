@@ -24,7 +24,7 @@ namespace Skin
     {
         public static Menu Menu;//Menu
         public static String NomeChamp = Player.Instance.ChampionName;//Detecta o Campeão carregado original
-        public static Text Text1 = new EloBuddy.SDK.Rendering.Text("", new System.Drawing.Font(System.Drawing.FontFamily.GenericSansSerif, 11, System.Drawing.FontStyle.Bold));
+        public static Text Text1 = new EloBuddy.SDK.Rendering.Text("", new System.Drawing.Font(System.Drawing.FontFamily.GenericSansSerif, 12, System.Drawing.FontStyle.Bold));
         public static Text Text = new EloBuddy.SDK.Rendering.Text("", new System.Drawing.Font(System.Drawing.FontFamily.GenericSansSerif, 11, System.Drawing.FontStyle.Bold));
         //Load
         static void Main(string[] args)
@@ -37,9 +37,10 @@ namespace Skin
         {
             var MeuCampeao = ObjectManager.Player.ChampionName;
             Menu = MainMenu.AddMenu("LS+ Skin MOD", "LS+ Faker Skin Elov");
-            Menu.AddGroupLabel("Cài Đặt Chung");
-            Menu.Add("Sử dụng Skin", new CheckBox("✔   (" + MeuCampeao + " - Sử dụng Skin 1 To 11)", true));
-            Menu.Add("Đặt lại Skin Mặc Định", new KeyBind("Reset / Resetar (Bug Reset)", false, KeyBind.BindTypes.HoldActive, 'L'));
+            Menu.AddGroupLabel("/////////////////////////////////////////");
+            Menu.AddGroupLabel("  ◣  SkinHack ◥");
+            Menu.Add("UseSkinHack", new CheckBox("✔   (" + MeuCampeao + " - Use SkinHack 1 To 11)", true));
+            Menu.Add("ResetSkin&Model", new KeyBind("Reset / Resetar (Bug Reset)", false, KeyBind.BindTypes.HoldActive, 'L'));
             var SkinHack = Menu.Add("SkinID", new Slider("SkinHack Select", 1, 0, 11));
             var ID = new[] {"Classic","SkinHack 1","SkinHack 2","SkinHack 3","SkinHack 4","SkinHack 5","SkinHack 6","SkinHack 7","SkinHack 8","SkinHack 9","SkinHack 10","SkinHack 11"};
             SkinHack.DisplayName = ID[SkinHack.CurrentValue];
