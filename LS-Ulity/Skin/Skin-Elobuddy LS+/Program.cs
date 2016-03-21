@@ -39,9 +39,9 @@ namespace Skin
             Menu = MainMenu.AddMenu("LS+ Skin MOD", "LS+ Faker Skin Elov");
             Menu.AddGroupLabel("Cài Đặt Chung");
             Menu.Add("Sử dụng Skin", new CheckBox("✔   (" + MeuCampeao + " - Sử dụng Skin 1 To 11)", true));
-            Menu.Add("Đặt lại Skin Mặc Định", new KeyBind("Thiết lập lại (Đặt lại)", false, KeyBind.BindTypes.HoldActive, 'L'));
-            var SkinHack = Menu.Add("SkinID", new Slider("Chọn Skin", 1, 0, 11));
-            var ID = new[] {"Classic","ID Skin Tướng 1","ID Skin Tướng 2","ID Skin Tướng 3","ID Skin Tướng 4","ID Skin Tướng 5","ID Skin Tướng 6","ID Skin Tướng 7","ID Skin Tướng 8","ID Skin Tướng 9","ID Skin Tướng 10","ID Skin Tướng 11"};
+            Menu.Add("Đặt lại Skin Mặc Định", new KeyBind("Thiết lập lại(Đặt lại)", false, KeyBind.BindTypes.HoldActive, 'L'));
+            var SkinHack = Menu.Add("SkinID", new Slider("SkinHack Select", 1, 0, 11));
+            var ID = new[] {"Classic","SkinHack 1","SkinHack 2","SkinHack 3","SkinHack 4","SkinHack 5","SkinHack 6","SkinHack 7","SkinHack 8","SkinHack 9","SkinHack 10","SkinHack 11"};
             SkinHack.DisplayName = ID[SkinHack.CurrentValue];
             SkinHack.OnValueChange += delegate(ValueBase<int> sender, ValueBase<int>.ValueChangeArgs changeArgs){sender.DisplayName = ID[changeArgs.NewValue];};
 
@@ -82,7 +82,7 @@ namespace Skin
             Menu.Add("DrawTarget", new CheckBox("✔   GetLine ( TargetSelector )", true));
             Menu.Add("DrawTEXT", new CheckBox("✔   Show Text ( Config )", true));
             Menu.AddGroupLabel("─────────────────────────────────────────");
-            Menu.AddGroupLabel("By: LS+ Faker Edit");
+            Menu.AddGroupLabel("By: EloBuddy");
 
             Chat.Print("|| LS+ Faker Skin MOD Skin LS+ || <font color='#00d459'>By: LS+ </font>", System.Drawing.Color.White);
             Chat.Print("|| LS+ Faker Skin MOD Skin LS+ || <font color='#00d459'>LOAD Skin : " + NomeChamp + "</font>", System.Drawing.Color.White);
