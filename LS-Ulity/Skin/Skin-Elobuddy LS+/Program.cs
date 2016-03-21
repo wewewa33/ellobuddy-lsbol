@@ -80,8 +80,9 @@ namespace Skin
             Menu.AddGroupLabel("─────────────────────────────────────────");
             Menu.AddGroupLabel("  ◣  Extra  ◥");
             Menu.Add("DrawTarget", new CheckBox("✔   GetLine ( TargetSelector )", true));
+            Menu.Add("DrawTEXT", new CheckBox("", true));
             Menu.AddGroupLabel("─────────────────────────────────────────");
-            Menu.AddGroupLabel("By: EloBuddy");
+            Menu.AddGroupLabel("By: LS+ Faker Edit");
 
             Chat.Print("|| LS+ Faker Skin MOD Skin LS+ || <font color='#00d459'>By: LS+ </font>", System.Drawing.Color.White);
             Chat.Print("|| LS+ Faker Skin MOD Skin LS+ || <font color='#00d459'>LOAD Skin : " + NomeChamp + "</font>", System.Drawing.Color.White);
