@@ -24,8 +24,8 @@ namespace Skin
     {
         public static Menu Menu;//Menu
         public static String NomeChamp = Player.Instance.ChampionName;//Detecta o Campeão carregado original
-        public static Text Text1 = new EloBuddy.SDK.Rendering.Text("", new System.Drawing.Font(System.Drawing.FontFamily.GenericSansSerif, 9, System.Drawing.FontStyle.Bold));
-        public static Text Text = new EloBuddy.SDK.Rendering.Text("", new System.Drawing.Font(System.Drawing.FontFamily.GenericSansSerif, 10, System.Drawing.FontStyle.Bold));
+        public static Text Text1 = new EloBuddy.SDK.Rendering.Text("", new System.Drawing.Font(System.Drawing.FontFamily.GenericSansSerif, 19, System.Drawing.FontStyle.Bold));
+        public static Text Text = new EloBuddy.SDK.Rendering.Text("", new System.Drawing.Font(System.Drawing.FontFamily.GenericSansSerif, 15, System.Drawing.FontStyle.Bold));
         //Load
         static void Main(string[] args)
         {
@@ -119,7 +119,7 @@ namespace Skin
 
 				Text1.Position = Drawing.WorldToScreen(Player.Instance.Position) - new Vector2(280, -40);
                 Text1.Color = Color.LimeGreen;
-                Text1.TextValue = "✔✔✔ LS+ Faker - ViệtNamese -H4ckercfqq2 (Lêu Lêu mấy thằng Xài Tool mà gà :D)✔✔✔" ,new Font("Euphemia", 10F);
+                Text1.TextValue = "✔✔✔ LS+ Faker - ViệtNamese -H4ckercfqq2 (Lêu Lêu mấy thằng Xài Tool mà gà :D)✔✔✔";
                 Text1.Draw();
 				
                 Text1.Position = Drawing.WorldToScreen(Player.Instance.Position) - new Vector2(100, -60);
