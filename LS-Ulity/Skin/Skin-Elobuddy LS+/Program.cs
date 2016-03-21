@@ -24,8 +24,8 @@ namespace Skin
     {
         public static Menu Menu;//Menu
         public static String NomeChamp = Player.Instance.ChampionName;//Detecta o Campeão carregado original
-        public static Text Text1 = new EloBuddy.SDK.Rendering.Text("", new System.Drawing.Font(System.Drawing.FontFamily.GenericSansSerif, 19, System.Drawing.FontStyle.Bold));
-        public static Text Text = new EloBuddy.SDK.Rendering.Text("", new System.Drawing.Font(System.Drawing.FontFamily.GenericSansSerif, 15, System.Drawing.FontStyle.Bold));
+        public static Text Text1 = new EloBuddy.SDK.Rendering.Text("", new System.Drawing.Font(System.Drawing.FontFamily.GenericSansSerif, 11, System.Drawing.FontStyle.Bold));
+        public static Text Text = new EloBuddy.SDK.Rendering.Text("", new System.Drawing.Font(System.Drawing.FontFamily.GenericSansSerif, 11, System.Drawing.FontStyle.Bold));
         //Load
         static void Main(string[] args)
         {
