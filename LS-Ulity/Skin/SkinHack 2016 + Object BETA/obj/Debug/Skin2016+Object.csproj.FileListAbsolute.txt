@@ -1,0 +1,11 @@
+C:\Users\Onix\Documents\Addons\EloBuddyAddon\SkinHack 2016 + Object BETA\bin\Debug\Skin2016 By US.exe.config
+C:\Users\Onix\Documents\Addons\EloBuddyAddon\SkinHack 2016 + Object BETA\bin\Debug\Skin2016 By US.exe
+C:\Users\Onix\Documents\Addons\EloBuddyAddon\SkinHack 2016 + Object BETA\bin\Debug\Skin2016 By US.pdb
+C:\Users\Onix\Documents\Addons\EloBuddyAddon\SkinHack 2016 + Object BETA\bin\Debug\EloBuddy.dll
+C:\Users\Onix\Documents\Addons\EloBuddyAddon\SkinHack 2016 + Object BETA\bin\Debug\EloBuddy.SDK.dll
+C:\Users\Onix\Documents\Addons\EloBuddyAddon\SkinHack 2016 + Object BETA\bin\Debug\SharpDX.Direct3D9.dll
+C:\Users\Onix\Documents\Addons\EloBuddyAddon\SkinHack 2016 + Object BETA\bin\Debug\SharpDX.dll
+C:\Users\Onix\Documents\Addons\EloBuddyAddon\SkinHack 2016 + Object BETA\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Onix\Documents\Addons\EloBuddyAddon\SkinHack 2016 + Object BETA\obj\Debug\Skin2016+Object.csprojResolveAssemblyReference.cache
+C:\Users\Onix\Documents\Addons\EloBuddyAddon\SkinHack 2016 + Object BETA\obj\Debug\Skin2016 By US.exe
+C:\Users\Onix\Documents\Addons\EloBuddyAddon\SkinHack 2016 + Object BETA\obj\Debug\Skin2016 By US.pdb
