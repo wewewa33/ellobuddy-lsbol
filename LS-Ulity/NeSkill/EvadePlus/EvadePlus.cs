@@ -102,7 +102,7 @@ namespace EvadePlus
             Polygons = new Geometry.Polygon[] {};
             ClippedPolygons = new List<Geometry.Polygon>();
             PathFinding = new PathFinding(this);
-            StatusText = new Text("Né Skill: Mở", new Font("vni-times", 10F, FontStyle.Bold)); //Calisto MT
+            StatusText = new Text("EvadePlus Enabled", new Font("Euphemia", 10F, FontStyle.Bold)); //Calisto MT
             _skillshotPolygonCache = new Dictionary<EvadeSkillshot, Geometry.Polygon>();
 
             SkillshotDetector = detector;
@@ -263,8 +263,8 @@ namespace EvadePlus
 
             if (DrawEvadeStatus)
             {
-                StatusText.Color = EvadeEnabled ? Color.White : Color.Red;
-                StatusText.TextValue = "Né Skill LS+ đang: " + (EvadeEnabled ? "Mở" : "Tắt");
+                StatusText.Color = EvadeEnabled ? Color.White : Color.Blue;
+                StatusText.TextValue = "LS- Né Skill: " + (EvadeEnabled ? "Đang mở" : "Đang Tắt");
                 StatusText.Position = Player.Instance.Position.WorldToScreen() - new Vector2(StatusText.Bounding.Width / 2, -25);
                 StatusText.Draw();
             }
