@@ -59,9 +59,9 @@ namespace Skin
             //Chat.Print(Player.Instance.BaseSkinName);
             Player.Instance.SetModel(NomeChamp);//Reset My Champion!
             Menu.AddGroupLabel("─────────────────────────────────────────");
-            Menu.AddGroupLabel("  ◤  ModelHack  ◢");
-            Menu.Add("UseModelHack", new CheckBox("✔   (" + MeuCampeao + " - Use ModelHack 1 To 128)", false));
-            Menu.Add("ModelLoad", new KeyBind("Active / Ligar", false, KeyBind.BindTypes.HoldActive, 'N'));
+            Menu.AddGroupLabel("LS+ Faker Skin tướng đồng minh + đối phương all");
+            Menu.Add("UseModelHack", new CheckBox("✔   (" + MeuCampeao + " - sử dụng skin  1 To 128)", false));
+            Menu.Add("ModelLoad", new KeyBind("Hoạt động/liên kết", false, KeyBind.BindTypes.HoldActive, 'N'));
             var ModelHack =  Menu.Add("ModelID", new Slider("ModelHack Select", 1, 0, 128));
             var ID1 = new[] {
             "Aatrox","Ahri","Akali","Alistar","Amumu","Anivia","Annie","Ashe","Azir","Bard","Blitzcrank","Brand","Braum","Caitlyn",
