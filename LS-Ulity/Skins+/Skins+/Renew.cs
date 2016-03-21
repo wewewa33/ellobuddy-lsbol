@@ -1,4 +1,4 @@
-﻿namespace SkinsPlus
+﻿namespace LSFakerSkin
 {
     using System;
     using System.Collections.Generic;

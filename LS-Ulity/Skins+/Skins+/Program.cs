@@ -1,4 +1,4 @@
-﻿namespace SkinsPlus
+﻿namespace LSFakerSkin
 {
     using EloBuddy.SDK.Events;
 
