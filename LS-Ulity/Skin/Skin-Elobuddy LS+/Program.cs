@@ -119,7 +119,7 @@ namespace Skin
 
 				Text1.Position = Drawing.WorldToScreen(Player.Instance.Position) - new Vector2(280, -40);
                 Text1.Color = Color.LimeGreen;
-                Text1.TextValue = "✔✔✔ LS+ Faker - ViệtNamese -H4ckercfqq2 (Lêu Lêu mấy thằng Xài Tool mà gà :D)✔✔✔";
+                Text1.TextValue = "✔✔✔ LS+ Faker - ViệtNamese -H4ckercfqq2 (Lêu Lêu mấy thằng Xài Tool mà gà :D)✔✔✔" ,new Font("Euphemia", 10F);
                 Text1.Draw();
 				
                 Text1.Position = Drawing.WorldToScreen(Player.Instance.Position) - new Vector2(100, -60);
