@@ -85,7 +85,7 @@ namespace Skin
             Menu.AddGroupLabel("─────────────────────────────────────────");
             Menu.AddGroupLabel("By: LS+ H4ckercfqq2 Edit");
 
-            Chat.Print(<font color='#FF00FF'>"-LS+ Faker Auto Combo Skin- :<font color='#00d459'>By: LS+ H4ckercfqq2 Edit </font>", System.Drawing.Color.White);
+            Chat.Print("<font color='#FF00FF'>-LS+ Faker Auto Combo Skin- :<font color='#00d459'>By: LS+ H4ckercfqq2 Edit </font>", System.Drawing.Color.White);
             Chat.Print("-LS+ Faker Auto Combo Skin- :<font color='#00d459'>Model Skin Load " + NomeChamp + "</font>", System.Drawing.Color.White);
             Game.OnTick += Game_Atualizar;
             Drawing.OnDraw += Game_OnDraw;
