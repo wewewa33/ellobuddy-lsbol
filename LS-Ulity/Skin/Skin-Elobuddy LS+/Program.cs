@@ -108,7 +108,7 @@ namespace Skin
                 
 				
 				Text1.Position = Drawing.WorldToScreen(Player.Instance.Position) - new Vector2(1, -20);
-                Text1.Color = Color.White ;
+                Text1.Color = Color.Blue ;
                 Text1.TextValue = "LS+ Faker :D Việt Namese hahahahaha";
                 Text1.Draw();
 				
