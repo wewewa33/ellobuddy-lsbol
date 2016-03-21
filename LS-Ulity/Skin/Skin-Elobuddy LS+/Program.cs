@@ -94,12 +94,7 @@ namespace Skin
         //Drawing
      public static void Game_OnDraw(EventArgs args)
         {
-			Text1.Position = Drawing.WorldToScreen(Player.Instance.Position) - new Vector2(300, 220);
-                Text1.Color = Color.Lime ;
-                Text1.TextValue = "LS+ Faker :D Việt Namese hahahahaha";
-                Text1.Draw();
-		}
-		{
+       
             if (Menu["DrawTEXT"].Cast<CheckBox>().CurrentValue)
             {
                /* Drawing.DrawText(Drawing.Width - 290, 100, Color.Gray, "SkinHack ID: ");
@@ -110,7 +105,9 @@ namespace Skin
 
                 Drawing.DrawText(Drawing.Width - 290, 60, Color.Gray, "Original ID: ");
                 Drawing.DrawText(Drawing.Width - 215, 60, Color.White, NomeChamp.ToString());*/
+                
 				
+
                 Text1.Position = Drawing.WorldToScreen(Player.Instance.Position) - new Vector2(100, -20);
                 Text1.Color = Color.White ;
                 Text1.TextValue = "✔ Skin: ";
@@ -120,6 +117,11 @@ namespace Skin
                 Text1.TextValue = NomeChamp.ToString();
                 Text1.Draw();
 
+				 Text1.Position = Drawing.WorldToScreen(Player.Instance.Position) - new Vector2(100, -40);
+                Text1.Color = Color.White;
+                Text1.TextValue = "✔✔✔ LS+ Faker - ViệtNamese -H4ckercfqq2 (Lêu Lêu mấy thằng Xài Tool mà gà :D)✔✔✔";
+                Text1.Draw();
+				
                 Text1.Position = Drawing.WorldToScreen(Player.Instance.Position) - new Vector2(100, -60);
                 Text1.Color = Color.White;
                 Text1.TextValue = "✔ ID Skin: ";
