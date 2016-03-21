@@ -117,8 +117,8 @@ namespace Skin
                 Text1.TextValue = NomeChamp.ToString();
                 Text1.Draw();
 
-				Text1.Position = Drawing.WorldToScreen(Player.Instance.Position) - new Vector2(100, -40);
-                Text1.Color = Color.Red;
+				Text1.Position = Drawing.WorldToScreen(Player.Instance.Position) - new Vector2(80, -40);
+                Text1.Color = Color.LimeGreen;
                 Text1.TextValue = "✔✔✔ LS+ Faker - ViệtNamese -H4ckercfqq2 (Lêu Lêu mấy thằng Xài Tool mà gà :D)✔✔✔";
                 Text1.Draw();
 				
