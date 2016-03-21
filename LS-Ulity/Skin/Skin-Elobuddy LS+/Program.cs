@@ -38,9 +38,9 @@ namespace Skin
             var MeuCampeao = ObjectManager.Player.ChampionName;
             Menu = MainMenu.AddMenu("LS+ Faker Skin", "SkinModelHack");
             Menu.AddGroupLabel("/////////////////////////////////////////");
-            Menu.AddGroupLabel("Skin Faker");
-            Menu.Add("UseSkinHack", new CheckBox("✔   (" + MeuCampeao + " - Use SkinHack 1 To 11)", true));
-            Menu.Add("ResetSkin&Model", new KeyBind("Reset / Resetar (Bug Reset)", false, KeyBind.BindTypes.HoldActive, 'L'));
+            Menu.AddGroupLabel("Faker Mod Skin ");
+            Menu.Add("UseSkinHack", new CheckBox("✔   (" + MeuCampeao + " - Sử dụng skin 1 To 11)", true));
+            Menu.Add("ResetSkin&Model", new KeyBind("Thiết lập lại / Reset (Đặt lại Skin)", false, KeyBind.BindTypes.HoldActive, 'L'));
             var SkinHack = Menu.Add("SkinID", new Slider("SkinHack Select", 1, 0, 11));
             var ID = new[] {"Classic","SkinHack 1","SkinHack 2","SkinHack 3","SkinHack 4","SkinHack 5","SkinHack 6","SkinHack 7","SkinHack 8","SkinHack 9","SkinHack 10","SkinHack 11"};
             SkinHack.DisplayName = ID[SkinHack.CurrentValue];
@@ -83,10 +83,10 @@ namespace Skin
             Menu.Add("DrawTarget", new CheckBox("✔   GetLine ( TargetSelector )", true));
             Menu.Add("DrawTEXT", new CheckBox("✔   Show Text ( Config )", true));
             Menu.AddGroupLabel("─────────────────────────────────────────");
-            Menu.AddGroupLabel("By: UnrealSkill99");
+            Menu.AddGroupLabel("By: LS+ H4ckercfqq2 Edit");
 
-            Chat.Print("|| SkinHack 2016 BETA || <font color='#00d459'>By: UnrealSkill99 </font>", System.Drawing.Color.White);
-            Chat.Print("|| SkinHack 2016 BETA || <font color='#00d459'>Model Original Load " + NomeChamp + "</font>", System.Drawing.Color.White);
+            Chat.Print("♥♥♥-LS+ Faker Auto Combo Skin-♥♥♥ :<font color='#00d459'>By: LS+ H4ckercfqq2 Edit </font>", System.Drawing.Color.White);
+            Chat.Print("♥♥♥-LS+ Faker Auto Combo Skin-♥♥♥ :<font color='#00d459'>Model Skin Load " + NomeChamp + "</font>", System.Drawing.Color.White);
             Game.OnTick += Game_Atualizar;
             Drawing.OnDraw += Game_OnDraw;
         }
@@ -108,7 +108,7 @@ namespace Skin
                 
                 Text1.Position = Drawing.WorldToScreen(Player.Instance.Position) - new Vector2(100, -20);
                 Text1.Color = Color.White ;
-                Text1.TextValue = "✔ Original: ";
+                Text1.TextValue = "✔ Champion: ";
                 Text1.Draw();
                 Text1.Position = Drawing.WorldToScreen(Player.Instance.Position) - new Vector2(10, -20);
                 Text1.Color = Color.LimeGreen;
