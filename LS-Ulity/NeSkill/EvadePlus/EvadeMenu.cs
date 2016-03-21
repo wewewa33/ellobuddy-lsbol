@@ -23,11 +23,11 @@ namespace EvadePlus
                 return;
             }
 
-            MainMenu = EloBuddy.SDK.Menu.MainMenu.AddMenu("Evade+", "EvadePlus");
+            MainMenu = EloBuddy.SDK.Menu.MainMenu.AddMenu("LS-Né Skill", "Né Skill");
 
             // Set up main menu
-            MainMenu.AddGroupLabel("General Settings");
-            MainMenu.Add("fowDetection", new CheckBox("Enable FOW detection"));
+            MainMenu.AddGroupLabel("Cài Đặt Chung");
+            MainMenu.Add("Phát hiện dòng chảy", new CheckBox("Bật tính năng LƯU"));
             MainMenu.AddLabel("On: for dodging through fog of war, Off: for more human behaviour");
             MainMenu.AddSeparator(3);
 
@@ -69,7 +69,7 @@ namespace EvadePlus
                         s.SpellData.ChampionName == "AllChampions" &&
                         heroes.Any(obj => obj.Spellbook.Spells.Select(c => c.Name).Contains(s.SpellData.SpellName))));
 
-            SkillshotMenu = MainMenu.AddSubMenu("Skillshots");
+            SkillshotMenu = MainMenu.AddSubMenu("Chiêu of Tướng");
             SkillshotMenu.AddLabel(string.Format("Skillshots Loaded {0}", skillshots.Count));
             SkillshotMenu.AddSeparator();
 
@@ -104,7 +104,7 @@ namespace EvadePlus
             }
 
             // Set up spell menu
-            SpellMenu = MainMenu.AddSubMenu("Evading Spells");
+            SpellMenu = MainMenu.AddSubMenu("NÉ-Tướng Phép");
             SpellMenu.AddGroupLabel("Flash");
             SpellMenu.Add("flash", new Slider("Danger Value", 5, 0, 5));
 
@@ -119,9 +119,9 @@ namespace EvadePlus
             DrawMenu.Add("drawPath", new CheckBox("Draw Autpathing Path"));
 
             // Set up controls menu
-            HotkeysMenu = MainMenu.AddSubMenu("Hotkeys");
-            HotkeysMenu.AddGroupLabel("Hotkeys");
-            HotkeysMenu.Add("enableEvade", new KeyBind("Enable Evade", true, KeyBind.BindTypes.PressToggle, 'M'));
+            HotkeysMenu = MainMenu.AddSubMenu("Phím Nhanh");
+            HotkeysMenu.AddGroupLabel("Phím Tắt nhanh");
+            HotkeysMenu.Add("Off Né Skill", new KeyBind("Tắt Né Skill", true, KeyBind.BindTypes.PressToggle, 'M'));
             HotkeysMenu.Add("dodgeOnlyDangerous", new KeyBind("Dodge Only Dangerous", false, KeyBind.BindTypes.HoldActive));
         }
 
