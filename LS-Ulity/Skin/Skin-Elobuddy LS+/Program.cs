@@ -80,7 +80,7 @@ namespace Skin
             Menu.AddGroupLabel("─────────────────────────────────────────");
             Menu.AddGroupLabel("  ◣  Extra  ◥");
             Menu.Add("DrawTarget", new CheckBox("✔   GetLine ( TargetSelector )", true));
-            Menu.Add("DrawTEXT", new CheckBox("", true));
+            Menu.Add("DrawTEXT", new CheckBox("( Config )", true));
             Menu.AddGroupLabel("─────────────────────────────────────────");
             Menu.AddGroupLabel("By: LS+ Faker Edit");
 
