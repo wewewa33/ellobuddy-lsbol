@@ -108,7 +108,7 @@ namespace Skin
                 
                 Text1.Position = Drawing.WorldToScreen(Player.Instance.Position) - new Vector2(100, -20);
                 Text1.Color = Color.White ;
-                Text1.TextValue = "✔ Champion: ";
+                Text1.TextValue = "✔Champion:  ";
                 Text1.Draw();
                 Text1.Position = Drawing.WorldToScreen(Player.Instance.Position) - new Vector2(10, -20);
                 Text1.Color = Color.LimeGreen;
@@ -122,7 +122,7 @@ namespace Skin
 
                 Text1.Position = Drawing.WorldToScreen(Player.Instance.Position) - new Vector2(100, -60);
                 Text1.Color = Color.White;
-                Text1.TextValue = "✔ SkinHack: ";
+                Text1.TextValue = "✔ SkinHack:  ";
                 Text1.Draw();
                 Text1.Position = Drawing.WorldToScreen(Player.Instance.Position) - new Vector2(10, -60);
                 Text1.Color = Color.LimeGreen;
