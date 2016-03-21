@@ -40,10 +40,10 @@ namespace Skin
             Menu.AddGroupLabel("Cài Đặt Chung");
             Menu.Add("Sử dụng Skin", new CheckBox("✔   (" + MeuCampeao + " - Sử dụng Skin 1 To 11)", true));
             Menu.Add("Đặt lại Skin Mặc Định", new KeyBind("Thiết lập lại (Đặt lại)", false, KeyBind.BindTypes.HoldActive, 'L'));
-            var ID Skin Tướng = Menu.Add("SkinID", new Slider("Chọn Skin", 1, 0, 11));
+            var SkinHack = Menu.Add("SkinID", new Slider("Chọn Skin", 1, 0, 11));
             var ID = new[] {"Classic","ID Skin Tướng 1","ID Skin Tướng 2","ID Skin Tướng 3","ID Skin Tướng 4","ID Skin Tướng 5","ID Skin Tướng 6","ID Skin Tướng 7","ID Skin Tướng 8","ID Skin Tướng 9","ID Skin Tướng 10","ID Skin Tướng 11"};
-            ID Skin Tướng.DisplayName = ID[ID Skin Tướng.CurrentValue];
-            ID Skin Tướng.OnValueChange += delegate(ValueBase<int> sender, ValueBase<int>.ValueChangeArgs changeArgs){sender.DisplayName = ID[changeArgs.NewValue];};
+            SkinHack.DisplayName = ID[SkinHack.CurrentValue];
+            SkinHack.OnValueChange += delegate(ValueBase<int> sender, ValueBase<int>.ValueChangeArgs changeArgs){sender.DisplayName = ID[changeArgs.NewValue];};
 
            /* Menu.AddGroupLabel("─────────────────────────────────────────");
             Menu.AddGroupLabel("  ◣  Ward Skin ◥");
@@ -96,7 +96,7 @@ namespace Skin
        
             if (Menu["DrawTEXT"].Cast<CheckBox>().CurrentValue)
             {
-               /* Drawing.DrawText(Drawing.Width - 290, 100, Color.Gray, "ID Skin Tướng ID: ");
+               /* Drawing.DrawText(Drawing.Width - 290, 100, Color.Gray, "SkinHack ID: ");
                 Drawing.DrawText(Drawing.Width - 200, 100, Color.White, Program.Menu["SkinID"].DisplayName);
 
                 Drawing.DrawText(Drawing.Width - 290, 80, Color.Gray, "ModelHack ID: ");
@@ -152,7 +152,7 @@ namespace Skin
         //DetectaObjeto de Jogador
      public static void DetectarObjeto()
         {
-            var ID Skin TướngSelect = Program.Menu["SkinID"].DisplayName;
+            var SkinHackSelect = Program.Menu["SkinID"].DisplayName;
             if (NomeChamp == "Aatrox")
             {
 
@@ -177,39 +177,39 @@ namespace Skin
             {
                 foreach (var Objeto in ObjectManager.Get<Obj_AI_Minion>().Where(o => o.IsValid && o.BaseSkinName == "AnnieTibbers"))
                 {
-                    switch (ID Skin TướngSelect)
+                    switch (SkinHackSelect)
                     {
                         case "Classic":
                             Objeto.SetSkinId(0);
                             break;
-                        case "ID Skin Tướng 1":
+                        case "SkinHack 1":
                             Objeto.SetSkinId(1);
                             break;
-                        case "ID Skin Tướng 2":
+                        case "SkinHack 2":
                             Objeto.SetSkinId(2);
                             break;
-                        case "ID Skin Tướng 3":
+                        case "SkinHack 3":
                             Objeto.SetSkinId(3);
                             break;
-                        case "ID Skin Tướng 4":
+                        case "SkinHack 4":
                             Objeto.SetSkinId(4);
                             break;
-                        case "ID Skin Tướng 5":
+                        case "SkinHack 5":
                             Objeto.SetSkinId(5);
                             break;
-                        case "ID Skin Tướng 6":
+                        case "SkinHack 6":
                             Objeto.SetSkinId(6);
                             break;
-                        case "ID Skin Tướng 7":
+                        case "SkinHack 7":
                             Objeto.SetSkinId(7);
                             break;
-                        case "ID Skin Tướng 8":
+                        case "SkinHack 8":
                             Objeto.SetSkinId(8);
                             break;
-                        case "ID Skin Tướng 9":
+                        case "SkinHack 9":
                             Objeto.SetSkinId(9);
                             break;
-                        case "ID Skin Tướng 10":
+                        case "SkinHack 10":
                             Objeto.SetSkinId(10);
                             break;
                     }
@@ -284,30 +284,30 @@ namespace Skin
             {
                 foreach (var Objeto in ObjectManager.Get<Obj_AI_Base>().Where(o => o.Name.ToLower().Equals("barrel")))
                 {
-                    switch (ID Skin TướngSelect)
+                    switch (SkinHackSelect)
                     {
                         case "Classic":
                             Objeto.SetSkinId(0);
                             break;
-                        case "ID Skin Tướng 1":
+                        case "SkinHack 1":
                             Objeto.SetSkinId(1);
                             break;
-                        case "ID Skin Tướng 2":
+                        case "SkinHack 2":
                             Objeto.SetSkinId(2);
                             break;
-                        case "ID Skin Tướng 3":
+                        case "SkinHack 3":
                             Objeto.SetSkinId(3);
                             break;
-                        case "ID Skin Tướng 4":
+                        case "SkinHack 4":
                             Objeto.SetSkinId(4);
                             break;
-                        case "ID Skin Tướng 5":
+                        case "SkinHack 5":
                             Objeto.SetSkinId(5);
                             break;
-                        case "ID Skin Tướng 6":
+                        case "SkinHack 6":
                             Objeto.SetSkinId(6);
                             break;
-                        case "ID Skin Tướng 7":
+                        case "SkinHack 7":
                             Objeto.SetSkinId(7);
                             break;
                     }
@@ -406,27 +406,27 @@ namespace Skin
 
                 foreach (var Particula1 in ObjectManager.Get<Obj_AI_Minion>().Where(o => o.IsValid && !o.IsDead && o.IsVisible && o.BaseSkinName == "LuluFaerie"))
                 {
-                    switch (ID Skin TướngSelect)
+                    switch (SkinHackSelect)
                     {
                         case "Classic":
                             Particula1.SetSkinId(0);
                             break;
-                        case "ID Skin Tướng 1":
+                        case "SkinHack 1":
                             Particula1.SetSkinId(1);
                             break;
-                        case "ID Skin Tướng 2":
+                        case "SkinHack 2":
                             Particula1.SetSkinId(2);
                             break;
-                        case "ID Skin Tướng 3":
+                        case "SkinHack 3":
                             Particula1.SetSkinId(3);
                             break;
-                        case "ID Skin Tướng 4":
+                        case "SkinHack 4":
                             Particula1.SetSkinId(4);
                             break;
-                        case "ID Skin Tướng 5":
+                        case "SkinHack 5":
                             Particula1.SetSkinId(5);
                             break;
-                        case "ID Skin Tướng 6":
+                        case "SkinHack 6":
                             Particula1.SetSkinId(6);
                             break;
                     }
@@ -467,30 +467,30 @@ namespace Skin
               /*  foreach (var Objeto in ObjectManager.Get<Obj_AI_Minion>().Where(o => o.IsValid && !o.IsDead && o.IsVisible && o.BaseSkinName == "Nasus_E_Green_Ring.troy"))
                // foreach (var Objeto in ObjectManager.Get<Obj_AI_Base>().Where(o => o.Name.ToLower().Equals("Nasus_Base_E_SpiritFire.troy")))
                 {
-                    switch (ID Skin TướngSelect)
+                    switch (SkinHackSelect)
                     {
                         case "Classic":
                             Objeto.SetSkinId(0);
                             break;
-                        case "ID Skin Tướng 1":
+                        case "SkinHack 1":
                             Objeto.SetSkinId(1);
                             break;
-                        case "ID Skin Tướng 2":
+                        case "SkinHack 2":
                             Objeto.SetSkinId(2);
                             break;
-                        case "ID Skin Tướng 3":
+                        case "SkinHack 3":
                             Objeto.SetSkinId(3);
                             break;
-                        case "ID Skin Tướng 4":
+                        case "SkinHack 4":
                             Objeto.SetSkinId(4);
                             break;
-                        case "ID Skin Tướng 5":
+                        case "SkinHack 5":
                             Objeto.SetSkinId(5);
                             break;
-                        case "ID Skin Tướng 6":
+                        case "SkinHack 6":
                             Objeto.SetSkinId(6);
                             break;
-                        case "ID Skin Tướng 7":
+                        case "SkinHack 7":
                             Objeto.SetSkinId(7);
                             break;
                     }
@@ -513,24 +513,24 @@ namespace Skin
               //  foreach (var Objeto in ObjectManager.Get<Obj_AI_Base>().Where(o => o.Name.ToLower().Equals("OlafAxe")))
                 foreach (var Objeto in ObjectManager.Get<Obj_AI_Minion>().Where(o => o.IsValid && o.BaseSkinName == "OlafAxe"))
                 {
-                    switch (ID Skin TướngSelect)
+                    switch (SkinHackSelect)
                     {
                         case "Classic":
                             Objeto.SetSkinId(0);
                             break;
-                        case "ID Skin Tướng 1":
+                        case "SkinHack 1":
                             Objeto.SetSkinId(1);
                             break;
-                        case "ID Skin Tướng 2":
+                        case "SkinHack 2":
                             Objeto.SetSkinId(2);
                             break;
-                        case "ID Skin Tướng 3":
+                        case "SkinHack 3":
                             Objeto.SetSkinId(3);
                             break;
-                        case "ID Skin Tướng 4":
+                        case "SkinHack 4":
                             Objeto.SetSkinId(4);
                             break;
-                        case "ID Skin Tướng 5":
+                        case "SkinHack 5":
                             Objeto.SetSkinId(5);
                             break;
                     }
@@ -648,7 +648,7 @@ namespace Skin
                     var Particula5 = ObjectManager.Get<Obj_AI_Base>().FirstOrDefault(o => o.Name.ToLower().Equals("UdyrTurtleUlt"));
                     var Particula6 = ObjectManager.Get<Obj_AI_Base>().FirstOrDefault(o => o.Name.ToLower().Equals("UdyrUlt"));*/
              
-                    switch (ID Skin TướngSelect)
+                    switch (SkinHackSelect)
                     {
                         case "Classic":
                             Particula1.SetSkinId(0);
@@ -659,7 +659,7 @@ namespace Skin
                             Particula6.SetSkinId(0);
                           //  Particula7.SetSkinId(0);*/
                             break;
-                        case "ID Skin Tướng 1":
+                        case "SkinHack 1":
                             Particula1.SetSkinId(1);
                         /*    Particula2.SetSkinId(1);
                             Particula3.SetSkinId(1);
@@ -668,7 +668,7 @@ namespace Skin
                             Particula6.SetSkinId(1);
                          //   Particula7.SetSkinId(1);*/
                             break;
-                        case "ID Skin Tướng 2":
+                        case "SkinHack 2":
                             Particula1.SetSkinId(2);
                        /*     Particula2.SetSkinId(2);
                             Particula3.SetSkinId(2);
@@ -677,7 +677,7 @@ namespace Skin
                             Particula6.SetSkinId(2);
                           //  Particula7.SetSkinId(2);*/
                             break;
-                        case "ID Skin Tướng 3":
+                        case "SkinHack 3":
                             Particula1.SetSkinId(3);
                         /*    Particula2.SetSkinId(3);
                             Particula3.SetSkinId(3);
@@ -686,7 +686,7 @@ namespace Skin
                             Particula6.SetSkinId(3);
                          //   Particula7.SetSkinId(3);*/
                             break;
-                        case "ID Skin Tướng 4":
+                        case "SkinHack 4":
                             Particula1.SetSkinId(4);
                         /*    Particula2.SetSkinId(4);
                             Particula3.SetSkinId(4);
@@ -695,7 +695,7 @@ namespace Skin
                             Particula6.SetSkinId(4);
                         //    Particula7.SetSkinId(4);*/
                             break;
-                        case "ID Skin Tướng 5":
+                        case "SkinHack 5":
                             Particula1.SetSkinId(5);
                       /*      Particula2.SetSkinId(5);
                             Particula3.SetSkinId(5);
@@ -704,7 +704,7 @@ namespace Skin
                             Particula6.SetSkinId(5);
                         //    Particula7.SetSkinId(5);*/
                             break;
-                        case "ID Skin Tướng 6":
+                        case "SkinHack 6":
                             Particula1.SetSkinId(6);
                        /*     Particula2.SetSkinId(6);
                             Particula3.SetSkinId(6);
@@ -750,24 +750,24 @@ namespace Skin
             {
                 foreach (var Objeto in ObjectManager.Get<Obj_AI_Minion>().Where(o => o.IsValid && o.BaseSkinName == "MonkeyKing"))
                 {
-                    switch (ID Skin TướngSelect)
+                    switch (SkinHackSelect)
                     {
                         case "Classic":
                             Objeto.SetSkinId(0);
                             break;
-                        case "ID Skin Tướng 1":
+                        case "SkinHack 1":
                             Objeto.SetSkinId(1);
                             break;
-                        case "ID Skin Tướng 2":
+                        case "SkinHack 2":
                             Objeto.SetSkinId(2);
                             break;
-                        case "ID Skin Tướng 3":
+                        case "SkinHack 3":
                             Objeto.SetSkinId(3);
                             break;
-                        case "ID Skin Tướng 4":
+                        case "SkinHack 4":
                             Objeto.SetSkinId(4);
                             break;
-                        case "ID Skin Tướng 5":
+                        case "SkinHack 5":
                             Objeto.SetSkinId(5);
                             break;
                     }
@@ -792,15 +792,15 @@ namespace Skin
             {
                 foreach (var Objeto in ObjectManager.Get<Obj_AI_Base>().Where(o => o.Name.ToLower().Equals("ZedShadow")))
                 {
-                    switch (ID Skin TướngSelect)
+                    switch (SkinHackSelect)
                     {
                         case "Classic":
                             Objeto.SetSkinId(0);
                             break;
-                        case "ID Skin Tướng 1":
+                        case "SkinHack 1":
                             Objeto.SetSkinId(1);
                             break;
-                        case "ID Skin Tướng 2":
+                        case "SkinHack 2":
                             Objeto.SetSkinId(2);
                             break;
                     }
@@ -821,43 +821,43 @@ namespace Skin
      public static void LoadingSkin()
         {
             DetectarObjeto();
-            var ID Skin TướngSelect = Program.Menu["SkinID"].DisplayName;
-            switch (ID Skin TướngSelect)
+            var SkinHackSelect = Program.Menu["SkinID"].DisplayName;
+            switch (SkinHackSelect)
             {
                 case "Classic":
                    Player.Instance.SetSkinId(0);
                     break;
-                case "ID Skin Tướng 1":
+                case "SkinHack 1":
                   Player.Instance.SetSkinId(1);
                     break;
-                case "ID Skin Tướng 2":
+                case "SkinHack 2":
                   Player.Instance.SetSkinId(2);
                     break;
-                case "ID Skin Tướng 3":
+                case "SkinHack 3":
                  Player.Instance.SetSkinId(3);
                     break;
-                case "ID Skin Tướng 4":
+                case "SkinHack 4":
                   Player.Instance.SetSkinId(4);
                     break;
-                case "ID Skin Tướng 5":
+                case "SkinHack 5":
                     Player.Instance.SetSkinId(5);
                     break;
-                case "ID Skin Tướng 6":
+                case "SkinHack 6":
                   Player.Instance.SetSkinId(6);
                     break;
-                case "ID Skin Tướng 7":
+                case "SkinHack 7":
                   Player.Instance.SetSkinId(7);
                     break;
-                case "ID Skin Tướng 8":
+                case "SkinHack 8":
                    Player.Instance.SetSkinId(8);
                     break;
-                case "ID Skin Tướng 9":
+                case "SkinHack 9":
                    Player.Instance.SetSkinId(9);
                     break;
-                case "ID Skin Tướng 10":
+                case "SkinHack 10":
                 Player.Instance.SetSkinId(10);
                     break;
-                case "ID Skin Tướng 11":
+                case "SkinHack 11":
                     Player.Instance.SetSkinId(11);
                     break;
             }
@@ -875,11 +875,11 @@ namespace Skin
                 {
                     var ModelHackSelect = Program.Menu["ModelID"].DisplayName;
                     Player.Instance.SetModel(ModelHackSelect);
-                    Chat.Print("|| ID Skin Tướng 2016 BETA || <font color='#ff0000'>Carregado / Load ModelHack " + ModelHackSelect + "</font>", System.Drawing.Color.White);
+                    Chat.Print("|| SkinHack 2016 BETA || <font color='#ff0000'>Carregado / Load ModelHack " + ModelHackSelect + "</font>", System.Drawing.Color.White);
                 }
         }
         //Ward Skin
-     public static void WardID Skin Tướng()
+     public static void WardSKinHack()
      {
          foreach (var ObjetoWard in ObjectManager.Get<Obj_AI_Base>().Where(o => o.Name.ToLower().Equals("YellowTrinket")))
          {
@@ -929,9 +929,9 @@ namespace Skin
 
         private static void Game_Atualizar(EventArgs args)
         {
-            if (Menu["UseID Skin Tướng"].Cast<CheckBox>().CurrentValue) LoadingSkin();
+            if (Menu["UseSkinHack"].Cast<CheckBox>().CurrentValue) LoadingSkin();
             if (Menu["UseModelHack"].Cast<CheckBox>().CurrentValue) ActiveModelHack();
-             //   WardID Skin Tướng();
+             //   WardSKinHack();
         }
     }
 }
