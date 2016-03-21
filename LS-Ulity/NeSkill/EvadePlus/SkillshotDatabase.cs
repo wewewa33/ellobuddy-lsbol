@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using EloBuddy;
-using LsEvade.SkillshotTypes;
-using LsEvade.SkillshotTypes.SpecialTypes;
+using EvadePlus.SkillshotTypes;
+using EvadePlus.SkillshotTypes.SpecialTypes;
 
-namespace LsEvade
+namespace EvadePlus
 {
     internal static class SkillshotDatabase
     {
