@@ -264,7 +264,7 @@ namespace EvadePlus
             if (DrawEvadeStatus)
             {
                 StatusText.Color = EvadeEnabled ? Color.White : Color.Red;
-                StatusText.TextValue = "EvadePlus " + (EvadeEnabled ? "Enabled" : "Disabled");
+                StatusText.TextValue = "Né Skill LS+ đang: " + (EvadeEnabled ? "Mở" : "Tắt");
                 StatusText.Position = Player.Instance.Position.WorldToScreen() - new Vector2(StatusText.Bounding.Width / 2, -25);
                 StatusText.Draw();
             }
