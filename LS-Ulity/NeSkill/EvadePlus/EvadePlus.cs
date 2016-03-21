@@ -102,7 +102,7 @@ namespace EvadePlus
             Polygons = new Geometry.Polygon[] {};
             ClippedPolygons = new List<Geometry.Polygon>();
             PathFinding = new PathFinding(this);
-            StatusText = new Text("EvadePlus Enabled", new Font("Euphemia", 10F, FontStyle.Bold)); //Calisto MT
+            StatusText = new Text("Né Skill: Mở", new Font("vni-times", 10F, FontStyle.Bold)); //Calisto MT
             _skillshotPolygonCache = new Dictionary<EvadeSkillshot, Geometry.Polygon>();
 
             SkillshotDetector = detector;
