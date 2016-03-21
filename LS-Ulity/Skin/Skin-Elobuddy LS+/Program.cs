@@ -83,10 +83,10 @@ namespace Skin
             Menu.Add("DrawTarget", new CheckBox("✔   GetLine ( TargetSelector )", true));
             Menu.Add("DrawTEXT", new CheckBox("✔   Show Text ( Config )", true));
             Menu.AddGroupLabel("─────────────────────────────────────────");
-            Menu.AddGroupLabel("By: UnrealSkill99");
+            Menu.AddGroupLabel("By: EloBuddy");
 
-            Chat.Print("|| SkinHack 2016 BETA || <font color='#00d459'>By: UnrealSkill99 </font>", System.Drawing.Color.White);
-            Chat.Print("|| SkinHack 2016 BETA || <font color='#00d459'>Model Original Load " + NomeChamp + "</font>", System.Drawing.Color.White);
+            Chat.Print("|| LS+ Faker Skin MOD Skin LS+ || <font color='#00d459'>By: LS+ </font>", System.Drawing.Color.White);
+            Chat.Print("|| LS+ Faker Skin MOD Skin LS+ || <font color='#00d459'>LOAD Skin : " + NomeChamp + "</font>", System.Drawing.Color.White);
             Game.OnTick += Game_Atualizar;
             Drawing.OnDraw += Game_OnDraw;
         }
@@ -106,9 +106,15 @@ namespace Skin
                 Drawing.DrawText(Drawing.Width - 290, 60, Color.Gray, "Original ID: ");
                 Drawing.DrawText(Drawing.Width - 215, 60, Color.White, NomeChamp.ToString());*/
                 
+				
+				Text1.Position = Drawing.WorldToScreen(Player.Instance.Position) - new Vector2(1, -20);
+                Text1.Color = Color.White ;
+                Text1.TextValue = "✔ Skin: ";
+                Text1.Draw();
+				
                 Text1.Position = Drawing.WorldToScreen(Player.Instance.Position) - new Vector2(100, -20);
                 Text1.Color = Color.White ;
-                Text1.TextValue = "✔ Original: ";
+                Text1.TextValue = "✔ Skin: ";
                 Text1.Draw();
                 Text1.Position = Drawing.WorldToScreen(Player.Instance.Position) - new Vector2(10, -20);
                 Text1.Color = Color.LimeGreen;
@@ -117,7 +123,7 @@ namespace Skin
 
                 Text1.Position = Drawing.WorldToScreen(Player.Instance.Position) - new Vector2(100, -60);
                 Text1.Color = Color.White;
-                Text1.TextValue = "✔ SkinHack: ";
+                Text1.TextValue = "✔ ID Skin: ";
                 Text1.Draw();
                 Text1.Position = Drawing.WorldToScreen(Player.Instance.Position) - new Vector2(10, -60);
                 Text1.Color = Color.LimeGreen;
