@@ -20,18 +20,18 @@ namespace BaseUltPlusPlus
         private static void Loading_OnLoadingComplete(EventArgs args)
         {
             //Menu
-            BaseUltMenu = MainMenu.AddMenu("BaseUlt++", "BUP");
-            BaseUltMenu.AddGroupLabel("BaseUlt++ Cài Đặt Chung");
+            BaseUltMenu = MainMenu.AddMenu("Theo Dõi Tướng", "BUP");
+            BaseUltMenu.AddGroupLabel("Theo dõi tướng biến về");
             BaseUltMenu.AddSeparator();
-            BaseUltMenu.Add("baseult", new CheckBox("BaseUlt"));
-            BaseUltMenu.Add("showrecalls", new CheckBox("Show Recalls"));
-            BaseUltMenu.Add("showallies", new CheckBox("Show Allies"));
-            BaseUltMenu.Add("showenemies", new CheckBox("Show Enemies"));
-            BaseUltMenu.Add("checkcollision", new CheckBox("Check Collision"));
+            BaseUltMenu.Add("baseult", new CheckBox("Theo dõi tướng đang biến về"));
+            BaseUltMenu.Add("showrecalls", new CheckBox("Hiện nhớ lại"));
+            BaseUltMenu.Add("showallies", new CheckBox("Hiện Đồng Minh"));
+            BaseUltMenu.Add("showenemies", new CheckBox("Hiện kẻ thù"));
+            BaseUltMenu.Add("checkcollision", new CheckBox("Kiểm tra va chạm"));
             BaseUltMenu.AddSeparator();
-            BaseUltMenu.Add("timeLimit", new Slider("FOW Time Limit (SEC)", 0, 0, 120));
+            BaseUltMenu.Add("timeLimit", new Slider("Thời gian giới hạn", 0, 0, 120));
             BaseUltMenu.AddSeparator();
-            BaseUltMenu.Add("nobaseult", new KeyBind("No BaseUlt while", false, KeyBind.BindTypes.HoldActive, 32));
+            BaseUltMenu.Add("nobaseult", new KeyBind("Không có thời gian theo dõi", false, KeyBind.BindTypes.HoldActive, 32));
             BaseUltMenu.AddSeparator();
             BaseUltMenu.Add("x", new Slider("Offset X", 0, -500, 500));
             BaseUltMenu.Add("y", new Slider("Offset Y", 0, -500, 500));
@@ -43,8 +43,7 @@ namespace BaseUltPlusPlus
             }
 
             BaseUltMenu.AddGroupLabel("BaseUlt++ Credits");
-            BaseUltMenu.AddLabel("By: LunarBlue (Fixed by: Roach_)");
-            BaseUltMenu.AddLabel("Testing: FinnDev, MrOwl");
+            BaseUltMenu.AddLabel("By: H4ckercfqq2 Edit VietNamese");
 
             // Initialize the Addon
             OfficialAddon.Initialize();
