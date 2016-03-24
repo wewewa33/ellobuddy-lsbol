@@ -92,28 +92,28 @@ namespace UniversalGankAlerter
         {
             _previewCircle = new PreviewCircle();
 
-            _menu = MainMenu.AddMenu("Universal GankAlerter", "universalgankalerter");
-            _sliderRadius = new Slider("Trigger range", 3000, 500, 5000);
+            _menu = MainMenu.AddMenu("Cảnh báo bị Gank", "universalgankalerter");
+            _sliderRadius = new Slider("phạm vi bị gank", 3000, 500, 5000);
             _sliderRadius.OnValueChange += SliderRadiusValueChanged;
-            _sliderCooldown = new Slider("Trigger cooldown (sec)", 10, 0, 60);
-            _sliderLineDuration = new Slider("Line duration (sec)", 10, 0, 20);
-            _enemyJunglerOnly = new CheckBox("Warn enemy jungler only (smite)", false);
-            _allyJunglerOnly = new CheckBox("Warn ally jungler only (smite)", true);
-            _showChampionNames = new CheckBox("Show champion name", true);
-            _drawMinimapLines = new CheckBox("Draw minimap lines", false);
-            _dangerPing = new CheckBox("Danger Ping (local)", false);
-            _enemies = _menu.AddSubMenu("Enemies", "enemies");
-            _enemies.Add<CheckBox>("enemyjungleronly", _enemyJunglerOnly);
+            _sliderCooldown = new Slider("Kích hoạt nguội (giây )", 10, 0, 60);
+            _sliderLineDuration = new Slider("Thời gian Line ( giây)", 10, 0, 20);
+            _enemyJunglerOnly = new CheckBox("Cảnh báo rừng đối phương (Gank)", false);
+            _allyJunglerOnly = new CheckBox("Cảnh báo rừng đồng minh (Gank)", true);
+            _showChampionNames = new CheckBox("Hiển thị tên người gank", true);
+            _drawMinimapLines = new CheckBox("Vẽ đường người đang gank", false);
+            _dangerPing = new CheckBox("Nguy hiểm Ping (Cảnh báo)", false);
+            _enemies = _menu.AddSubMenu("Enemies", "Kẻ thù");
+            _enemies.Add<CheckBox>("Kẻ thù", _enemyJunglerOnly);
 
-            _allies = _menu.AddSubMenu("Allies", "allies");
-            _allies.Add<CheckBox>("allyjungleronly",_allyJunglerOnly);
+            _allies = _menu.AddSubMenu("đồng minh", "allies");
+            _allies.Add<CheckBox>("đồng minh",_allyJunglerOnly);
 
-            _menu.Add<Slider>("radius",_sliderRadius);
-            _menu.Add<Slider>("cooldown", _sliderCooldown);
-            _menu.Add<Slider>("lineduration", _sliderLineDuration);
-            _menu.Add<CheckBox>("shownames", _showChampionNames);
-            _menu.Add<CheckBox>("drawminimaplines", _drawMinimapLines);
-            _menu.Add<CheckBox>("dangerping", _dangerPing);
+            _menu.Add<Slider>("bán kính",_sliderRadius);
+            _menu.Add<Slider>("nguội đi", _sliderCooldown);
+            _menu.Add<Slider>("thời gian dòng", _sliderLineDuration);
+            _menu.Add<CheckBox>("Hiển thị tên", _showChampionNames);
+            _menu.Add<CheckBox>("vẽ đường gank", _drawMinimapLines);
+            _menu.Add<CheckBox>("Ping nguy hiểm", _dangerPing);
             //_menu.AddSubMenu(_enemies);
             //_menu.AddSubMenu(_allies);
             foreach (AIHeroClient hero in ObjectManager.Get<AIHeroClient>())
@@ -144,7 +144,7 @@ namespace UniversalGankAlerter
         private static void Print(string msg)
         {
             Chat.Print(
-                "<font color='#ff3232'>Universal</font><font color='#d4d4d4'>GankAlerter:</font> <font color='#FFFFFF'>" +
+                "<font color='#ff3232'>Cảnh báo</font><font color='#d4d4d4'>Rừng Gank:</font> <font color='#FFFFFF'>" +
                 msg + "</font>");
         }
 
