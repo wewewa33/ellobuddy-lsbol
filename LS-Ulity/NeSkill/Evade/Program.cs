@@ -1373,7 +1373,7 @@ namespace Evade
                 var heropos = Drawing.WorldToScreen(ObjectManager.Player.Position);
                 if (Config.Menu["Enabled"].Cast<KeyBind>().CurrentValue)
                 {
-                    Drawing.DrawText(heropos.X, heropos.Y, Color.Red, "Né Skill V2.0:<font color='#ff3232'>On</font>");
+                    Drawing.DrawText(heropos.X, heropos.Y, Color.yellow, "Né Skill V2.0: ON");
                 }
             }
 
