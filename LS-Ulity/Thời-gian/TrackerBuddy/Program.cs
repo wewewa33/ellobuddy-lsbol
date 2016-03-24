@@ -73,8 +73,8 @@ namespace TrackerBuddy
         private static void Loading_OnLoadingComplete(EventArgs args)
         {
             // Create the menu
-            Menu = MainMenu.AddMenu("TrackerBuddy", "trackerBuddy");
-            Menu.AddGroupLabel("Tracker Buddy");
+            Menu = MainMenu.AddMenu("Theo-Dõi", "trackerBuddy");
+            Menu.AddGroupLabel("Theo-Dõi thời gian hồi skill của tướng");
             var mode = Menu.Add("mode", new CheckBox("Low Profile Mode"));
             mode.OnValueChange += delegate
             {
