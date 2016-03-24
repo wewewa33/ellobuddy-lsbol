@@ -56,4 +56,4 @@ using System.Runtime.InteropServices;
 // [assembly: AssemblyVersion("1.0.*")]
 
 [assembly: AssemblyVersion("5.16.0.1")]
-[assembly: AssemblyFileVersion("LS-Plus.1.0")]
+[assembly: AssemblyFileVersion("LS+'1.0'")]
