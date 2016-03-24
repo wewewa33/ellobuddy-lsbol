@@ -96,37 +96,37 @@ namespace Jhin.Champions
 
         public Menu KillStealMenu
         {
-            get { return MenuManager.GetSubMenu("Giết"); }
+            get { return MenuManager.GetSubMenu("KillSteal"); }
         }
 
         public Menu HarassMenu
         {
-            get { return MenuManager.GetSubMenu("quấy rầy"); }
+            get { return MenuManager.GetSubMenu("Harass"); }
         }
 
         public Menu ClearMenu
         {
-            get { return MenuManager.GetSubMenu("Trong sáng"); }
+            get { return MenuManager.GetSubMenu("Clear"); }
         }
 
         public Menu PredictionMenu
         {
-            get { return MenuManager.GetSubMenu("dự đoán"); }
+            get { return MenuManager.GetSubMenu("Prediction"); }
         }
 
         public Menu DrawingsMenu
         {
-            get { return MenuManager.GetSubMenu("Vẽ đường"); }
+            get { return MenuManager.GetSubMenu("Drawings"); }
         }
 
         public Menu FleeMenu
         {
-            get { return MenuManager.GetSubMenu("Trốn"); }
+            get { return MenuManager.GetSubMenu("Flee"); }
         }
 
         public Menu AutomaticMenu
         {
-            get { return MenuManager.GetSubMenu("Tự động"); }
+            get { return MenuManager.GetSubMenu("Automatic"); }
         }
 
         public Menu MiscMenu
@@ -136,16 +136,16 @@ namespace Jhin.Champions
 
         public Menu KeysMenu
         {
-            get { return MenuManager.GetSubMenu("Phím tắt"); }
+            get { return MenuManager.GetSubMenu("Keys"); }
         }
 
         public Menu EvaderMenu
         {
-            get { return MenuManager.GetSubMenu("Né Chiêu"); }
+            get { return MenuManager.GetSubMenu("Evader"); }
         }
         public Menu UltimateMenu
         {
-            get { return MenuManager.GetSubMenu("Giới hạn"); }
+            get { return MenuManager.GetSubMenu("Ultimate"); }
         }
 
         public SpellBase Ignite
