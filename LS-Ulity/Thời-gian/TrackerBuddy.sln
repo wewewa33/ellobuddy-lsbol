@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Theo-Dõi-Thời-gian-hồi-Skill-v.v", "TrackerBuddy\Theo-Dõi-Thời-gian-hồi-Skill-v.v.csproj", "{11C66A1F-D408-4A71-9E6E-A4A4C9907F79}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LS+ Theo-Dõi-Thời-gian-hồi-Skill-v.v", "TrackerBuddy\LS+ Theo-Dõi-Thời-gian-hồi-Skill-v.v.csproj", "{11C66A1F-D408-4A71-9E6E-A4A4C9907F79}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
