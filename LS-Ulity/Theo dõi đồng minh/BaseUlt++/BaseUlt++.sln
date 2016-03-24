@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{BF4E585C-BA01-42EF-8C82-F24B110E0067}") = "LS+ Theo dõi đồng minh", "LS+ Theo dõi đồng minh.csproj", "{11C66A1F-D408-4A71-9E6E-A4A4C9907F79}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{11C66A1F-D408-4A71-9E6E-A4A4C9907F79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11C66A1F-D408-4A71-9E6E-A4A4C9907F79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11C66A1F-D408-4A71-9E6E-A4A4C9907F79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11C66A1F-D408-4A71-9E6E-A4A4C9907F79}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
