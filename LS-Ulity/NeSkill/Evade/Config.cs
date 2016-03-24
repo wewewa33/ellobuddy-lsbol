@@ -75,20 +75,20 @@ namespace Evade
 
             if (Menu == null)
             {
-                Chat.Print("LOAD FAILED", Color.Red);
-                Console.WriteLine("Evade:: LOAD FAILED");
+                Chat.Print("Tải Evade", Color.Red);
+                Console.WriteLine("Né Chiêu:: Tải không thành công");
                 throw new NullReferenceException("Menu NullReferenceException");
             }
 
             //Create the evade spells submenus.
-            evadeSpells = Menu.AddSubMenu("Evade spells", "evadeSpells");
+            evadeSpells = Menu.AddSubMenu("Né Tướng Phép", "evadeSpells");
             foreach (var spell in EvadeSpellDatabase.Spells)
             {
                 evadeSpells.AddGroupLabel(spell.Name);
 
                 try
                 {
-                    evadeSpells.Add("DangerLevel" + spell.Name, new Slider("Danger level", spell._dangerLevel, 1, 5));
+                    evadeSpells.Add("DangerLevel" + spell.Name, new Slider("Cấp nguy hiểm", spell._dangerLevel, 1, 5));
                 }
                 catch (Exception e)
                 {
@@ -137,9 +137,9 @@ namespace Evade
             }
 
             collision = Menu.AddSubMenu("Collision", "Collision");
-            collision.Add("MinionCollision", new CheckBox("Minion collision"));
-            collision.Add("HeroCollision", new CheckBox("Hero collision"));
-            collision.Add("YasuoCollision", new CheckBox("Yasuo wall collision"));
+            collision.Add("MinionCollision", new CheckBox("Lính va chạm"));
+            collision.Add("HeroCollision", new CheckBox("Tướng va chạm"));
+            collision.Add("YasuoCollision", new CheckBox("Yasuo va chạm tường gió"));
             collision.Add("EnableCollision", new CheckBox("Enabled"));
             //TODO add mode.
 

@@ -145,8 +145,8 @@ namespace Evade
             //Initialze the collision
             Collision.Init();
 
-            Chat.Print("Evade Loaded", Color.Green);
-            Console.WriteLine("Evade:: Evade Loaded");
+            Chat.Print("Né Skill Loading............", Color.Green);
+            Console.WriteLine("Né Chiêu:: tải Thành công");
             
             if (Config.PrintSpellData)
             {
