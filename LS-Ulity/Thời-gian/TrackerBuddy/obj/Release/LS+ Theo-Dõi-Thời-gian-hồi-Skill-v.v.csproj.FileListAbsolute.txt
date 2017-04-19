@@ -1,0 +1,38 @@
+C:\EloBuddy\EloApp\Repositories\25A4AC3\LS-Ulity\Thời-gian\TrackerBuddy\bin\Release\TrackerBuddy.exe.config
+C:\EloBuddy\EloApp\Repositories\25A4AC3\LS-Ulity\Thời-gian\TrackerBuddy\bin\Release\TrackerBuddy.exe
+C:\EloBuddy\EloApp\Repositories\25A4AC3\LS-Ulity\Thời-gian\TrackerBuddy\bin\Release\TrackerBuddy.pdb
+C:\EloBuddy\EloApp\Repositories\25A4AC3\LS-Ulity\Thời-gian\TrackerBuddy\bin\Release\EloBuddy.dll
+C:\EloBuddy\EloApp\Repositories\25A4AC3\LS-Ulity\Thời-gian\TrackerBuddy\bin\Release\EloBuddy.SDK.dll
+C:\EloBuddy\EloApp\Repositories\25A4AC3\LS-Ulity\Thời-gian\TrackerBuddy\bin\Release\mscorlib.dll
+C:\EloBuddy\EloApp\Repositories\25A4AC3\LS-Ulity\Thời-gian\TrackerBuddy\bin\Release\SharpDX.Direct3D9.dll
+C:\EloBuddy\EloApp\Repositories\25A4AC3\LS-Ulity\Thời-gian\TrackerBuddy\bin\Release\SharpDX.dll
+C:\EloBuddy\EloApp\Repositories\25A4AC3\LS-Ulity\Thời-gian\TrackerBuddy\bin\Release\Newtonsoft.Json.dll
+C:\EloBuddy\EloApp\Repositories\25A4AC3\LS-Ulity\Thời-gian\TrackerBuddy\bin\Release\normidna.nlp
+C:\EloBuddy\EloApp\Repositories\25A4AC3\LS-Ulity\Thời-gian\TrackerBuddy\bin\Release\normnfc.nlp
+C:\EloBuddy\EloApp\Repositories\25A4AC3\LS-Ulity\Thời-gian\TrackerBuddy\bin\Release\normnfd.nlp
+C:\EloBuddy\EloApp\Repositories\25A4AC3\LS-Ulity\Thời-gian\TrackerBuddy\bin\Release\normnfkc.nlp
+C:\EloBuddy\EloApp\Repositories\25A4AC3\LS-Ulity\Thời-gian\TrackerBuddy\bin\Release\normnfkd.nlp
+C:\EloBuddy\EloApp\Repositories\25A4AC3\LS-Ulity\Thời-gian\TrackerBuddy\obj\Release\LS+ Theo-Dõi-Thời-gian-hồi-Skill-v.v.csprojResolveAssemblyReference.cache
+C:\EloBuddy\EloApp\Repositories\25A4AC3\LS-Ulity\Thời-gian\TrackerBuddy\obj\Release\TrackerBuddy.Properties.Resources.resources
+C:\EloBuddy\EloApp\Repositories\25A4AC3\LS-Ulity\Thời-gian\TrackerBuddy\obj\Release\LS+ Theo-Dõi-Thời-gian-hồi-Skill-v.v.csproj.GenerateResource.Cache
+C:\EloBuddy\EloApp\Repositories\25A4AC3\LS-Ulity\Thời-gian\TrackerBuddy\obj\Release\TrackerBuddy.exe
+C:\EloBuddy\EloApp\Repositories\25A4AC3\LS-Ulity\Thời-gian\TrackerBuddy\obj\Release\TrackerBuddy.pdb
+C:\EloApp\LS-Ulity\Thời-gian\TrackerBuddy\bin\Release\TrackerBuddy.exe.config
+C:\EloApp\LS-Ulity\Thời-gian\TrackerBuddy\bin\Release\TrackerBuddy.exe
+C:\EloApp\LS-Ulity\Thời-gian\TrackerBuddy\bin\Release\TrackerBuddy.pdb
+C:\EloApp\LS-Ulity\Thời-gian\TrackerBuddy\bin\Release\EloBuddy.dll
+C:\EloApp\LS-Ulity\Thời-gian\TrackerBuddy\bin\Release\EloBuddy.SDK.dll
+C:\EloApp\LS-Ulity\Thời-gian\TrackerBuddy\bin\Release\mscorlib.dll
+C:\EloApp\LS-Ulity\Thời-gian\TrackerBuddy\bin\Release\SharpDX.Direct3D9.dll
+C:\EloApp\LS-Ulity\Thời-gian\TrackerBuddy\bin\Release\SharpDX.dll
+C:\EloApp\LS-Ulity\Thời-gian\TrackerBuddy\bin\Release\Newtonsoft.Json.dll
+C:\EloApp\LS-Ulity\Thời-gian\TrackerBuddy\bin\Release\normidna.nlp
+C:\EloApp\LS-Ulity\Thời-gian\TrackerBuddy\bin\Release\normnfc.nlp
+C:\EloApp\LS-Ulity\Thời-gian\TrackerBuddy\bin\Release\normnfd.nlp
+C:\EloApp\LS-Ulity\Thời-gian\TrackerBuddy\bin\Release\normnfkc.nlp
+C:\EloApp\LS-Ulity\Thời-gian\TrackerBuddy\bin\Release\normnfkd.nlp
+C:\EloApp\LS-Ulity\Thời-gian\TrackerBuddy\obj\Release\LS+ Theo-Dõi-Thời-gian-hồi-Skill-v.v.csprojResolveAssemblyReference.cache
+C:\EloApp\LS-Ulity\Thời-gian\TrackerBuddy\obj\Release\TrackerBuddy.Properties.Resources.resources
+C:\EloApp\LS-Ulity\Thời-gian\TrackerBuddy\obj\Release\LS+ Theo-Dõi-Thời-gian-hồi-Skill-v.v.csproj.GenerateResource.Cache
+C:\EloApp\LS-Ulity\Thời-gian\TrackerBuddy\obj\Release\TrackerBuddy.exe
+C:\EloApp\LS-Ulity\Thời-gian\TrackerBuddy\obj\Release\TrackerBuddy.pdb

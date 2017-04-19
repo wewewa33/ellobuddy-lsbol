@@ -1,0 +1,12 @@
+C:\EloApp\LS-Ulity\TimerBuddy\TimerBuddy\bin\Release\TimerBuddy.exe.config
+C:\EloApp\LS-Ulity\TimerBuddy\TimerBuddy\bin\Release\TimerBuddy.exe
+C:\EloApp\LS-Ulity\TimerBuddy\TimerBuddy\bin\Release\TimerBuddy.pdb
+C:\EloApp\LS-Ulity\TimerBuddy\TimerBuddy\bin\Release\EloBuddy.dll
+C:\EloApp\LS-Ulity\TimerBuddy\TimerBuddy\bin\Release\EloBuddy.SDK.dll
+C:\EloApp\LS-Ulity\TimerBuddy\TimerBuddy\bin\Release\SharpDX.Direct3D9.dll
+C:\EloApp\LS-Ulity\TimerBuddy\TimerBuddy\bin\Release\SharpDX.dll
+C:\EloApp\LS-Ulity\TimerBuddy\TimerBuddy\bin\Release\Newtonsoft.Json.dll
+C:\EloApp\LS-Ulity\TimerBuddy\TimerBuddy\obj\Release\TimerBuddy.Properties.Resources.resources
+C:\EloApp\LS-Ulity\TimerBuddy\TimerBuddy\obj\Release\TimerBuddy.csproj.GenerateResource.Cache
+C:\EloApp\LS-Ulity\TimerBuddy\TimerBuddy\obj\Release\TimerBuddy.exe
+C:\EloApp\LS-Ulity\TimerBuddy\TimerBuddy\obj\Release\TimerBuddy.pdb

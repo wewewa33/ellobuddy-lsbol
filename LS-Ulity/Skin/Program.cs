@@ -115,14 +115,15 @@ namespace Skin
                 Text1.TextValue = NomeChamp.ToString();
                 Text1.Draw();
 
-                Text1.Position = Drawing.WorldToScreen(Player.Instance.Position) - new Vector2(280, -40);
+                Text1.Position = Drawing.WorldToScreen(Player.Instance.Position) - new Vector2(-100, 300);
                 Text1.Color = Color.LimeGreen;
-                Text1.TextValue = "✔✔H4-Plus Faker - ViệtNamese -H4ckercfqq2✔✔";
+                Text1.TextValue = "✔✔H4-Plus Faker ViệtNamese -H4ckercfqq2✔✔";
                 Text1.Draw();
+				
 
                 Text1.Position = Drawing.WorldToScreen(Player.Instance.Position) - new Vector2(100, -60);
                 Text1.Color = Color.White;
-                Text1.TextValue = "✔ SkinHack:  ";
+                Text1.TextValue = "✔ Skin:  ";
                 Text1.Draw();
                 Text1.Position = Drawing.WorldToScreen(Player.Instance.Position) - new Vector2(10, -60);
                 Text1.Color = Color.LimeGreen;
